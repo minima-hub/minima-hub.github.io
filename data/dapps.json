@@ -568,7 +568,9 @@
     "status": "beta",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["amm", "liquidity", "pool", "defi", "minima-usdt"]
+    "tags": ["amm", "liquidity", "pool", "defi", "minima-usdt"],
+    "telegram": "https://t.me/theminimapool",
+    "x": "https://x.com/theminimapool"
   },
   {
     "name": "The Safe",
