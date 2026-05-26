@@ -357,29 +357,52 @@
       color: #9a7a50;
     }
 
-    .legacy-toggle {
-      display: inline-flex;
+    .legacy-toggle-wrap {
+      display: flex;
       align-items: center;
-      gap: 6px;
-      padding: 6px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: transparent;
-      color: var(--muted);
-      font-size: 0.8rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.18s;
-      font-family: inherit;
-      white-space: nowrap;
+      gap: 9px;
+      margin-bottom: 10px;
     }
 
-    .legacy-toggle:hover { border-color: rgba(150,120,80,0.4); color: #9a7a50; }
+    .legacy-toggle-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+      user-select: none;
+      cursor: pointer;
+    }
+
+    .legacy-toggle {
+      position: relative;
+      width: 42px;
+      height: 24px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.22s;
+      flex-shrink: 0;
+    }
+
+    .legacy-toggle::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      transition: transform 0.22s;
+    }
 
     .legacy-toggle.active {
-      background: rgba(150,120,80,0.12);
-      border-color: rgba(150,120,80,0.35);
-      color: #9a7a50;
+      background: #9a7a50;
+    }
+
+    .legacy-toggle.active::after {
+      transform: translateX(18px);
     }
 
     .dapp-category {
@@ -454,80 +477,6 @@
     }
 
     /* ---- LIBRARIES ---- */
-
-    .lib-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 14px;
-    }
-
-    .lib-card {
-      padding: 18px 20px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background: var(--surface);
-      transition: border-color 0.18s, background 0.18s, transform 0.15s;
-    }
-
-    .lib-card:hover {
-      border-color: var(--accent-border);
-      background: var(--surface2);
-      transform: translateY(-2px);
-    }
-
-    .lib-card-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
-      gap: 10px;
-    }
-
-    .lib-name {
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    .lib-lang {
-      font-size: 0.72rem;
-      font-weight: 600;
-      padding: 2px 9px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      border: 1px solid var(--accent-border);
-      color: var(--accent);
-      white-space: nowrap;
-    }
-
-    .lib-desc {
-      font-size: 0.84rem;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 14px;
-    }
-
-    .lib-links {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .lib-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      padding: 4px 11px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      color: var(--muted);
-      transition: all 0.18s;
-    }
-
-    .lib-link:hover { border-color: var(--accent-border); color: var(--accent); }
-    .lib-link svg { width: 12px; height: 12px; }
 
     /* ---- FOOTER ---- */
 
@@ -617,7 +566,6 @@
 
     @media (max-width: 600px) {
       .dapps-grid { grid-template-columns: 1fr; }
-      .lib-grid { grid-template-columns: 1fr; }
       .resource-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -648,12 +596,6 @@
       <div id="resource-groups" class="resource-groups">
         <div class="loading-state"><div class="spinner"></div></div>
       </div>
-      <div class="section-head" style="margin-top:40px">
-        <span class="section-label">Libraries &amp; SDKs</span>
-      </div>
-      <div id="lib-grid" class="lib-grid">
-        <div class="loading-state"><div class="spinner"></div></div>
-      </div>
     </div>
   </section>
 
@@ -679,7 +621,10 @@
         <button class="cat-tab" data-cat="NFT">NFT</button>
         <button class="cat-tab" data-cat="Gaming">Gaming</button>
       </div>
-      <button id="legacy-toggle" class="legacy-toggle">⊞ Show legacy</button>
+      <div class="legacy-toggle-wrap">
+        <button id="legacy-toggle" class="legacy-toggle" aria-label="Show legacy dApps"></button>
+        <span class="legacy-toggle-label" id="legacy-toggle-label">Show legacy</span>
+      </div>
       <div class="dapps-count" id="dapps-count"></div>
       <div id="dapps-grid" class="dapps-grid">
         <div class="loading-state"><div class="spinner"></div><span>Loading...</span></div>
@@ -753,24 +698,6 @@
       });
     }
 
-    function renderLibraries(libs) {
-      const grid = document.getElementById('lib-grid');
-      if (!libs || !libs.length) { grid.innerHTML = '<div class="empty-state">No libraries listed yet.</div>'; return; }
-      grid.innerHTML = libs.map(lib => `
-        <div class="lib-card">
-          <div class="lib-card-top">
-            <div class="lib-name">${lib.name}</div>
-            <span class="lib-lang">${lib.language}</span>
-          </div>
-          <div class="lib-desc">${lib.description}</div>
-          <div class="lib-links">
-            ${lib.url ? `<a href="${lib.url}" target="_blank" rel="noopener" class="lib-link">${icons.link} Docs</a>` : ''}
-            ${lib.github ? `<a href="${lib.github}" target="_blank" rel="noopener" class="lib-link">${icons.github} GitHub</a>` : ''}
-            ${lib.npm ? `<a href="https://npmjs.com/package/${lib.npm}" target="_blank" rel="noopener" class="lib-link">npm</a>` : ''}
-          </div>
-        </div>`).join('');
-    }
-
     function statusBadge(status) {
       if (status === 'active') return '';
       const cls = { beta: 'badge-beta', experimental: 'badge-experimental', archived: 'badge-archived', legacy: 'badge-legacy' }[status] || '';
@@ -835,12 +762,10 @@
         allDapps = dapps;
         renderDapps(allDapps);
         renderResources(resources);
-        renderLibraries(resources.libraries || []);
         document.getElementById('dapps-count').textContent = `${allDapps.length} dApps`;
       } catch (err) {
         document.getElementById('dapps-grid').innerHTML = '<div class="empty-state">Could not load data.</div>';
         document.getElementById('resource-groups').innerHTML = '<div class="empty-state">Could not load resource data.</div>';
-        document.getElementById('lib-grid').innerHTML = '<div class="empty-state">Could not load library data.</div>';
       }
     }
 
@@ -858,13 +783,14 @@
       filterDapps();
     });
 
-    document.getElementById('legacy-toggle').addEventListener('click', () => {
+    function toggleLegacy() {
       showLegacy = !showLegacy;
-      const btn = document.getElementById('legacy-toggle');
-      btn.classList.toggle('active', showLegacy);
-      btn.textContent = showLegacy ? '✕ Hide legacy' : '⊞ Show legacy';
+      document.getElementById('legacy-toggle').classList.toggle('active', showLegacy);
+      document.getElementById('legacy-toggle-label').textContent = showLegacy ? 'Hide legacy' : 'Show legacy';
       filterDapps();
-    });
+    }
+    document.getElementById('legacy-toggle').addEventListener('click', toggleLegacy);
+    document.getElementById('legacy-toggle-label').addEventListener('click', toggleLegacy);
 
     loadData();
   </script>

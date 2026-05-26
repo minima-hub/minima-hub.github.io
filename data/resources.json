@@ -61,6 +61,13 @@
       ]
     },
     {
+      "label": "Libraries & SDKs",
+      "items": [
+        { "name": "MDS - Minima Development System", "url": "https://docs.minima.global/docs/development", "note": "JavaScript · Official" },
+        { "name": "minima.js", "url": "https://github.com/minima-global/minima.js", "note": "JavaScript · Archived" }
+      ]
+    },
+    {
       "label": "dApp Stores",
       "items": [
         { "name": "Jazminima SuperStore", "url": "https://jazminima.github.io/dappstore/", "note": "Jazminima" },
@@ -69,28 +76,6 @@
         { "name": "DynamiteSush Store", "url": "https://dynamitesush.vps.webdock.cloud/store/store.json", "note": "DynamiteSush" },
         { "name": "Monthrie MegaStore", "url": "https://monthrie.github.io/minidapp-store/", "note": "Monthrie" }
       ]
-    }
-  ],
-  "libraries": [
-    {
-      "name": "MDS - Minima Development System",
-      "description": "Core JavaScript library for building MiniDApps. Provides a full API to interact with your Minima full node, manage tokens, sign transactions, and communicate over Maxima.",
-      "language": "JavaScript",
-      "url": "https://docs.minima.global/docs/development",
-      "github": "https://github.com/minima-global/MiniDAPP",
-      "npm": null,
-      "status": "active",
-      "official": true
-    },
-    {
-      "name": "minima.js",
-      "description": "JavaScript interface library for writing MiniDApps that run directly on the Minima full blockchain node.",
-      "language": "JavaScript",
-      "url": "https://github.com/minima-global/minima.js",
-      "github": "https://github.com/minima-global/minima.js",
-      "npm": null,
-      "status": "archived",
-      "official": true
     }
   ]
 }
