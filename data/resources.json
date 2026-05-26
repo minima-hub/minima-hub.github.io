@@ -12,16 +12,15 @@
     {
       "label": "Node Setup",
       "items": [
-        { "name": "Download", "url": "https://minima.global/get-minima", "note": "Desktop, Android, server" },
+        { "name": "Get Started", "url": "https://docs.minima.global/docs/runanode/get_started", "note": "Desktop, Android, server" },
         { "name": "Docker Image", "url": "https://hub.docker.com/r/minimaglobal/minima", "note": "minimaglobal/minima" },
-        { "name": "Raspberry Pi Guide", "url": "https://docs.minima.global/docs/runanode/rpi-arm64", "note": "" },
-        { "name": "VPS / Linux Guide", "url": "https://docs.minima.global/docs/runanode/linux_vps", "note": "" },
-        { "name": "Terminal Commands", "url": "https://docs.minima.global/docs/runanode/terminal_commands", "note": "Full command reference" }
+        { "name": "Raspberry Pi Guide", "url": "https://docs.minima.global/docs/runanode/get_started", "note": "" },
+        { "name": "VPS / Linux Guide", "url": "https://docs.minima.global/docs/runanode/get_started", "note": "" },
+        { "name": "Terminal Commands", "url": "https://docs.minima.global/docs/runanode/get_started", "note": "Full command reference" }
       ]
     },
     {
       "label": "MegaMMR Nodes",
-      "note": "For QuickSync, Seed Phrase Import, or Backup Restore - enter in Security settings",
       "copyable": true,
       "items": [
         { "name": "megammr.minima.global:9001", "url": null, "note": "" },
@@ -34,7 +33,7 @@
       "items": [
         { "name": "Telegram", "url": "https://t.me/Minima_Global", "note": "" },
         { "name": "Discord", "url": "https://discord.gg/minimaglobal", "note": "" },
-        { "name": "X / Twitter", "url": "https://x.com/Minima_Global", "note": "" },
+        { "name": "X", "url": "https://x.com/Minima_Global", "note": "" },
         { "name": "YouTube", "url": "https://www.youtube.com/@MinimaGlobal", "note": "" },
         { "name": "LinkedIn", "url": "https://www.linkedin.com/company/minimaglobal/", "note": "" }
       ]
@@ -44,8 +43,7 @@
       "items": [
         { "name": "Spartacus Rex", "url": "https://spartacusrex.com", "note": "Community node operator" },
         { "name": "Eurobuddha", "url": "https://eurobuddha.com", "note": "Community node operator" },
-        { "name": "MinimaMMR", "url": "https://minimammr.com", "note": "MMR node infrastructure" },
-        { "name": "Integritas", "url": "https://integritas.technology", "note": "Infrastructure services" }
+        { "name": "MinimaMMR", "url": "https://minimammr.com", "note": "MMR node infrastructure" }
       ]
     },
     {
@@ -56,15 +54,13 @@
     },
     {
       "label": "dApp Stores",
-      "note": "Add these JSON feed URLs in your Minima node under MiniDApp Store > Add Store",
-      "copyable": true,
       "items": [
-        { "name": "Jazminima SuperStore", "url": "https://jazminima.github.io/dappstore/dapps.json", "note": "Jazminima" },
-        { "name": "KISS Labs Store", "url": "https://eliasnemr.github.io/kisslabsstore/kiss_labs.json", "note": "Elias Nemr" },
+        { "name": "Jazminima SuperStore", "url": "https://jazminima.github.io/dappstore/", "note": "Jazminima" },
+        { "name": "KISS Labs Store", "url": "https://eliasnemr.github.io/kisslabsstore/", "note": "Elias Nemr" },
         { "name": "Panda dApps", "url": "https://eurobuddha.com/pandadapps.json", "note": "Eurobuddha" },
         { "name": "DynamiteSush Store", "url": "https://dynamitesush.vps.webdock.cloud/store/store.json", "note": "DynamiteSush" },
-        { "name": "Monthrie MegaStore", "url": "https://monthrie.github.io/minidapp-store/store.json", "note": "Monthrie" },
-        { "name": "VITAs Store", "url": "https://vita-agent.ai/dapp-store/dapps.json", "note": "VITA" }
+        { "name": "Monthrie MegaStore", "url": "https://monthrie.github.io/minidapp-store/", "note": "Monthrie" },
+        { "name": "VITAs Store", "url": "https://vita-agent.ai/dapp-store/", "note": "VITA" }
       ]
     }
   ],
