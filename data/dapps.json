@@ -1,159 +1,5 @@
 [
   {
-    "name": "Wallet",
-    "description": "Official Minima wallet for sending, receiving, and managing MINIMA tokens and custom tokens.",
-    "category": "Finance",
-    "url": "https://minima.global/get-minima",
-    "github": "https://github.com/minima-global/Wallet",
-    "status": "active",
-    "official": true,
-    "added": "2026-05-26",
-    "tags": ["wallet", "tokens", "official"]
-  },
-  {
-    "name": "MiniSwap",
-    "description": "Decentralized token swap for exchanging custom tokens on Minima.",
-    "category": "Finance",
-    "url": "https://minima.global",
-    "github": null,
-    "status": "active",
-    "official": true,
-    "added": "2026-05-26",
-    "tags": ["swap", "dex", "tokens"]
-  },
-  {
-    "name": "Future Cash",
-    "description": "Send MINIMA to yourself or others with a time lock - funds unlocked at a future date.",
-    "category": "Finance",
-    "url": "https://eliasnemr.github.io/kisslabsstore/",
-    "github": "https://github.com/eliasnemr",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["time-lock", "savings", "scheduled"]
-  },
-  {
-    "name": "SIMPLE",
-    "description": "Stripped-back Minima wallet built for simplicity and ease of use.",
-    "category": "Finance",
-    "url": "https://eliasnemr.github.io/kisslabsstore/",
-    "github": "https://github.com/eliasnemr",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["wallet", "simple", "kiss-labs"]
-  },
-  {
-    "name": "MinimASK Wallet",
-    "description": "Community web wallet for Minima - access your MINIMA from the browser without installing the node app.",
-    "category": "Finance",
-    "url": "https://minimask.org/webwallet/index.html",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["wallet", "web", "browser"]
-  },
-  {
-    "name": "MinimASK DEX",
-    "description": "Community-built decentralized exchange accessible directly from the browser.",
-    "category": "Finance",
-    "url": "https://minimask.org/dex/public/",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["dex", "swap", "browser"]
-  },
-  {
-    "name": "MXUSD",
-    "description": "USD-pegged stablecoin built on the Minima blockchain.",
-    "category": "Bridge",
-    "url": "https://mxusd.global",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["stablecoin", "usd", "bridge"]
-  },
-  {
-    "name": "Vestr",
-    "description": "Portfolio and vesting management tool for Minima tokens.",
-    "category": "Finance",
-    "url": "https://minima.global",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["portfolio", "vesting", "tokens"]
-  },
-  {
-    "name": "Security",
-    "description": "Manage your node security settings - lock and unlock the vault, run QuickSync, import seed phrase, and restore backups.",
-    "category": "Tools",
-    "url": "https://eliasnemr.github.io/kisslabsstore/",
-    "github": "https://github.com/eliasnemr",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["security", "quicksync", "backup", "seed-phrase", "vault"]
-  },
-  {
-    "name": "Pending",
-    "description": "View and manage your pending Minima transactions.",
-    "category": "Tools",
-    "url": "https://minima.global",
-    "github": "https://github.com/minima-global/Pending",
-    "status": "active",
-    "official": true,
-    "added": "2026-05-26",
-    "tags": ["transactions", "pending", "official"]
-  },
-  {
-    "name": "Filez",
-    "description": "Decentralized file management and storage on the Minima network.",
-    "category": "Tools",
-    "url": "https://minima.global",
-    "github": "https://github.com/minima-global/Filez",
-    "status": "active",
-    "official": true,
-    "added": "2026-05-26",
-    "tags": ["files", "storage", "official"]
-  },
-  {
-    "name": "MaxContacts",
-    "description": "Manage your Maxima contacts - the peer-to-peer communication layer of Minima.",
-    "category": "Tools",
-    "url": "https://minima.global",
-    "github": null,
-    "status": "active",
-    "official": true,
-    "added": "2026-05-26",
-    "tags": ["maxima", "contacts", "p2p", "official"]
-  },
-  {
-    "name": "Maximize",
-    "description": "Full Maxima management - configure and monitor your Maxima communication channels.",
-    "category": "Tools",
-    "url": "https://minima.global",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["maxima", "management", "p2p"]
-  },
-  {
-    "name": "The Safe",
-    "description": "Secure on-chain storage for sensitive data and secrets.",
-    "category": "Tools",
-    "url": "https://minima.global",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["storage", "secure", "secrets"]
-  },
-  {
     "name": "Axe S3",
     "description": "Prove token ownership to a third party using a QR code and digital signature - no transfer required.",
     "category": "Tools",
@@ -162,183 +8,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["ownership", "proof", "tokens", "verification"]
-  },
-  {
-    "name": "Health",
-    "description": "Decentralized healthcare data management on the Minima blockchain.",
-    "category": "Tools",
-    "url": "https://minima.global",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["health", "data", "records"]
-  },
-  {
-    "name": "PocketWeb",
-    "description": "Browse and host web content on the Minima network.",
-    "category": "Tools",
-    "url": "https://pocketweb.uk",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["web", "hosting", "browser"]
-  },
-  {
-    "name": "MiniWEB",
-    "description": "Decentralized web browser built as a MiniDApp.",
-    "category": "Tools",
-    "url": "https://minima.global",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["web", "browser", "decentralized"]
-  },
-  {
-    "name": "MiniMerch",
-    "description": "Minima ecosystem merchandise and collectibles platform.",
-    "category": "Tools",
-    "url": "https://minimerch.info",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["merch", "collectibles"]
-  },
-  {
-    "name": "MaxSolo",
-    "description": "Peer-to-peer private messaging and file sharing over the Maxima network.",
-    "category": "Communication",
-    "url": "https://minima.global",
-    "github": "https://github.com/minima-global/MaxSolo",
-    "status": "active",
-    "official": true,
-    "added": "2026-05-26",
-    "tags": ["messaging", "p2p", "maxima", "private", "official"]
-  },
-  {
-    "name": "ChainMail",
-    "description": "On-chain encrypted messaging - every Minima user has a ChainMail address. Messages are signed, end-to-end encrypted, and cost 0.001 MINIMA.",
-    "category": "Communication",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": "https://github.com/Jazminima",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["email", "encrypted", "messaging", "on-chain"]
-  },
-  {
-    "name": "Chatter",
-    "description": "Decentralized chat application built on Minima.",
-    "category": "Communication",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": "https://github.com/Jazminima",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["chat", "messaging", "decentralized"]
-  },
-  {
-    "name": "Shout Out",
-    "description": "Broadcast public messages on the Minima network.",
-    "category": "Communication",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["broadcast", "public", "social"]
-  },
-  {
-    "name": "VOX",
-    "description": "Censorship-proof social media protocol built on Minima.",
-    "category": "Communication",
-    "url": "https://monthrie.github.io/minidapp-store/",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["social", "censorship-resistant", "protocol"]
-  },
-  {
-    "name": "News Feed",
-    "description": "Decentralized news and information feed on the Minima network.",
-    "category": "Communication",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["news", "feed", "information"]
-  },
-  {
-    "name": "Yepp!",
-    "description": "Community social application on Minima.",
-    "category": "Communication",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["social", "community"]
-  },
-  {
-    "name": "Token Studio",
-    "description": "Create and launch custom tokens and NFTs on the Minima blockchain.",
-    "category": "NFT",
-    "url": "https://eliasnemr.github.io/kisslabsstore/",
-    "github": "https://github.com/eliasnemr",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["tokens", "nft", "launch", "create"]
-  },
-  {
-    "name": "Soko",
-    "description": "NFT marketplace on Minima - buy and sell NFTs on-chain.",
-    "category": "NFT",
-    "url": "https://eliasnemr.github.io/kisslabsstore/",
-    "github": "https://github.com/eliasnemr",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["nft", "marketplace", "buy", "sell"]
-  },
-  {
-    "name": "MinimaXT",
-    "description": "Minima ecosystem project - exchange and token tools.",
-    "category": "Finance",
-    "url": "https://minimaxt.org",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["exchange", "tokens"]
-  },
-  {
-    "name": "Lotto",
-    "description": "On-chain lottery game on Minima.",
-    "category": "Gaming",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["lottery", "game", "random"]
-  },
-  {
-    "name": "Miniverse",
-    "description": "Run around a mini on-chain universe - an interactive game built on Minima.",
-    "category": "Gaming",
-    "url": "https://eliasnemr.github.io/kisslabsstore/",
-    "github": "https://github.com/eliasnemr",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["game", "interactive", "metaverse"]
+    "tags": [
+      "ownership",
+      "proof",
+      "tokens",
+      "verification"
+    ]
   },
   {
     "name": "Block",
@@ -349,29 +24,88 @@
     "status": "active",
     "official": true,
     "added": "2026-05-26",
-    "tags": ["explorer", "blocks", "transactions", "official"]
+    "tags": [
+      "explorer",
+      "blocks",
+      "transactions",
+      "official"
+    ]
   },
   {
-    "name": "Watcher",
-    "description": "Monitor your Minima node status, uptime, and performance in real time.",
-    "category": "Infrastructure",
+    "name": "ChainMail",
+    "description": "On-chain encrypted messaging - every Minima user has a ChainMail address. Messages are signed, end-to-end encrypted, and cost 0.001 MINIMA.",
+    "category": "Communication",
+    "url": "https://jazminima.github.io/dappstore/",
+    "github": "https://github.com/Jazminima",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "email",
+      "encrypted",
+      "messaging",
+      "on-chain"
+    ]
+  },
+  {
+    "name": "Chatter",
+    "description": "Decentralized chat application built on Minima.",
+    "category": "Communication",
+    "url": "https://jazminima.github.io/dappstore/",
+    "github": "https://github.com/Jazminima",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "chat",
+      "messaging",
+      "decentralized"
+    ]
+  },
+  {
+    "name": "Filez",
+    "description": "Decentralized file management and storage on the Minima network.",
+    "category": "Tools",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/Filez",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": [
+      "files",
+      "storage",
+      "official"
+    ]
+  },
+  {
+    "name": "Future Cash",
+    "description": "Send MINIMA to yourself or others with a time lock - funds unlocked at a future date.",
+    "category": "Finance",
+    "url": "https://eliasnemr.github.io/kisslabsstore/",
+    "github": "https://github.com/eliasnemr",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "time-lock",
+      "savings",
+      "scheduled"
+    ]
+  },
+  {
+    "name": "Health",
+    "description": "Decentralized healthcare data management on the Minima blockchain.",
+    "category": "Tools",
     "url": "https://minima.global",
     "github": null,
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["monitoring", "node", "uptime"]
-  },
-  {
-    "name": "MinimaMMR",
-    "description": "Community MMR node infrastructure and tooling for the Minima network.",
-    "category": "Infrastructure",
-    "url": "https://minimammr.com",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["mmr", "node", "infrastructure"]
+    "tags": [
+      "health",
+      "data",
+      "records"
+    ]
   },
   {
     "name": "Integritas",
@@ -382,51 +116,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["infrastructure", "services", "technology"]
-  },
-  {
-    "name": "Terminal",
-    "description": "Command-line interface for interacting directly with your Minima node from the browser.",
-    "category": "Developer",
-    "url": "https://minima.global",
-    "github": "https://github.com/minima-global/MiniDApp-Terminal",
-    "status": "active",
-    "official": true,
-    "added": "2026-05-26",
-    "tags": ["cli", "terminal", "developer", "node", "official"]
-  },
-  {
-    "name": "Script IDE",
-    "description": "Integrated development environment for writing and testing Minima scripts.",
-    "category": "Developer",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": "https://github.com/Jazminima",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["scripting", "ide", "developer", "tools"]
-  },
-  {
-    "name": "SQL Bench",
-    "description": "Query and inspect the Minima node database directly using SQL.",
-    "category": "Developer",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": "https://github.com/Jazminima",
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["sql", "database", "developer", "query"]
-  },
-  {
-    "name": "MiniFS",
-    "description": "Decentralized file system built on Minima.",
-    "category": "Developer",
-    "url": "https://jazminima.github.io/dappstore/",
-    "github": null,
-    "status": "active",
-    "official": false,
-    "added": "2026-05-26",
-    "tags": ["filesystem", "storage", "developer"]
+    "tags": [
+      "infrastructure",
+      "services",
+      "technology"
+    ]
   },
   {
     "name": "Logs",
@@ -437,18 +131,363 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["logs", "debug", "monitoring", "node"]
+    "tags": [
+      "logs",
+      "debug",
+      "monitoring",
+      "node"
+    ]
   },
   {
-    "name": "V",
-    "description": "Decentralized on-chain social platform and self-sovereign AI agent experiment built on Minima. Share posts, articles and polls with true censorship resistance.",
-    "category": "Communication",
-    "url": "https://vita-agent.ai",
+    "name": "Lotto",
+    "description": "On-chain lottery game on Minima.",
+    "category": "Gaming",
+    "url": "https://jazminima.github.io/dappstore/",
     "github": null,
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["social", "ai", "decentralized", "posts", "vita"]
+    "tags": [
+      "lottery",
+      "game",
+      "random"
+    ]
+  },
+  {
+    "name": "MaxContacts",
+    "description": "Manage your Maxima contacts - the peer-to-peer communication layer of Minima.",
+    "category": "Tools",
+    "url": "https://minima.global",
+    "github": null,
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": [
+      "maxima",
+      "contacts",
+      "p2p",
+      "official"
+    ]
+  },
+  {
+    "name": "Maximize",
+    "description": "Full Maxima management - configure and monitor your Maxima communication channels.",
+    "category": "Tools",
+    "url": "https://minima.global",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "maxima",
+      "management",
+      "p2p"
+    ]
+  },
+  {
+    "name": "MaxSolo",
+    "description": "Peer-to-peer private messaging and file sharing over the Maxima network.",
+    "category": "Communication",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/MaxSolo",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": [
+      "messaging",
+      "p2p",
+      "maxima",
+      "private",
+      "official"
+    ]
+  },
+  {
+    "name": "MiniFS",
+    "description": "Decentralized file system built on Minima.",
+    "category": "Developer",
+    "url": "https://jazminima.github.io/dappstore/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "filesystem",
+      "storage",
+      "developer"
+    ]
+  },
+  {
+    "name": "MinimaMMR",
+    "description": "Community MMR node infrastructure and tooling for the Minima network.",
+    "category": "Infrastructure",
+    "url": "https://minimammr.com",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "mmr",
+      "node",
+      "infrastructure"
+    ]
+  },
+  {
+    "name": "MinimASK DEX",
+    "description": "Community-built decentralized exchange accessible directly from the browser.",
+    "category": "Finance",
+    "url": "https://minimask.org/dex/public/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "dex",
+      "swap",
+      "browser"
+    ]
+  },
+  {
+    "name": "MinimASK Wallet",
+    "description": "Community web wallet for Minima - access your MINIMA from the browser without installing the node app.",
+    "category": "Finance",
+    "url": "https://minimask.org/webwallet/index.html",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "wallet",
+      "web",
+      "browser"
+    ]
+  },
+  {
+    "name": "MinimaXT",
+    "description": "Minima ecosystem project - exchange and token tools.",
+    "category": "Finance",
+    "url": "https://minimaxt.org",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "exchange",
+      "tokens"
+    ]
+  },
+  {
+    "name": "MiniMerch",
+    "description": "Minima ecosystem merchandise and collectibles platform.",
+    "category": "Tools",
+    "url": "https://minimerch.info",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "merch",
+      "collectibles"
+    ]
+  },
+  {
+    "name": "MiniSwap",
+    "description": "Decentralized token swap for exchanging custom tokens on Minima.",
+    "category": "Finance",
+    "url": "https://minima.global",
+    "github": null,
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": [
+      "swap",
+      "dex",
+      "tokens"
+    ]
+  },
+  {
+    "name": "Miniverse",
+    "description": "Run around a mini on-chain universe - an interactive game built on Minima.",
+    "category": "Gaming",
+    "url": "https://eliasnemr.github.io/kisslabsstore/",
+    "github": "https://github.com/eliasnemr",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "game",
+      "interactive",
+      "metaverse"
+    ]
+  },
+  {
+    "name": "MiniWEB",
+    "description": "Decentralized web browser built as a MiniDApp.",
+    "category": "Tools",
+    "url": "https://minima.global",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "web",
+      "browser",
+      "decentralized"
+    ]
+  },
+  {
+    "name": "MXUSD",
+    "description": "USD-pegged stablecoin built on the Minima blockchain.",
+    "category": "Bridge",
+    "url": "https://mxusd.global",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "stablecoin",
+      "usd",
+      "bridge"
+    ]
+  },
+  {
+    "name": "News Feed",
+    "description": "Decentralized news and information feed on the Minima network.",
+    "category": "Communication",
+    "url": "https://jazminima.github.io/dappstore/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "news",
+      "feed",
+      "information"
+    ]
+  },
+  {
+    "name": "Pending",
+    "description": "View and manage your pending Minima transactions.",
+    "category": "Tools",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/Pending",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": [
+      "transactions",
+      "pending",
+      "official"
+    ]
+  },
+  {
+    "name": "PocketWeb",
+    "description": "Browse and host web content on the Minima network.",
+    "category": "Tools",
+    "url": "https://pocketweb.uk",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "web",
+      "hosting",
+      "browser"
+    ]
+  },
+  {
+    "name": "Script IDE",
+    "description": "Integrated development environment for writing and testing Minima scripts.",
+    "category": "Developer",
+    "url": "https://jazminima.github.io/dappstore/",
+    "github": "https://github.com/Jazminima",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "scripting",
+      "ide",
+      "developer",
+      "tools"
+    ]
+  },
+  {
+    "name": "Security",
+    "description": "Manage your node security settings - lock and unlock the vault, run QuickSync, import seed phrase, and restore backups.",
+    "category": "Tools",
+    "url": "https://eliasnemr.github.io/kisslabsstore/",
+    "github": "https://github.com/eliasnemr",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "security",
+      "quicksync",
+      "backup",
+      "seed-phrase",
+      "vault"
+    ]
+  },
+  {
+    "name": "Shout Out",
+    "description": "Broadcast public messages on the Minima network.",
+    "category": "Communication",
+    "url": "https://jazminima.github.io/dappstore/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "broadcast",
+      "public",
+      "social"
+    ]
+  },
+  {
+    "name": "SIMPLE",
+    "description": "Stripped-back Minima wallet built for simplicity and ease of use.",
+    "category": "Finance",
+    "url": "https://eliasnemr.github.io/kisslabsstore/",
+    "github": "https://github.com/eliasnemr",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "wallet",
+      "simple",
+      "kiss-labs"
+    ]
+  },
+  {
+    "name": "Soko",
+    "description": "NFT marketplace on Minima - buy and sell NFTs on-chain.",
+    "category": "NFT",
+    "url": "https://eliasnemr.github.io/kisslabsstore/",
+    "github": "https://github.com/eliasnemr",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "nft",
+      "marketplace",
+      "buy",
+      "sell"
+    ]
+  },
+  {
+    "name": "SQL Bench",
+    "description": "Query and inspect the Minima node database directly using SQL.",
+    "category": "Developer",
+    "url": "https://jazminima.github.io/dappstore/",
+    "github": "https://github.com/Jazminima",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "sql",
+      "database",
+      "developer",
+      "query"
+    ]
   },
   {
     "name": "Stables",
@@ -459,7 +498,30 @@
     "status": "beta",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["banking", "payments", "self-custody", "wallet", "stablecoin"]
+    "tags": [
+      "banking",
+      "payments",
+      "self-custody",
+      "wallet",
+      "stablecoin"
+    ]
+  },
+  {
+    "name": "Terminal",
+    "description": "Command-line interface for interacting directly with your Minima node from the browser.",
+    "category": "Developer",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/MiniDApp-Terminal",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": [
+      "cli",
+      "terminal",
+      "developer",
+      "node",
+      "official"
+    ]
   },
   {
     "name": "The Pool",
@@ -470,6 +532,134 @@
     "status": "beta",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["amm", "liquidity", "pool", "defi", "minima-usdt"]
+    "tags": [
+      "amm",
+      "liquidity",
+      "pool",
+      "defi",
+      "minima-usdt"
+    ]
+  },
+  {
+    "name": "The Safe",
+    "description": "Secure on-chain storage for sensitive data and secrets.",
+    "category": "Tools",
+    "url": "https://minima.global",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "storage",
+      "secure",
+      "secrets"
+    ]
+  },
+  {
+    "name": "Token Studio",
+    "description": "Create and launch custom tokens and NFTs on the Minima blockchain.",
+    "category": "NFT",
+    "url": "https://eliasnemr.github.io/kisslabsstore/",
+    "github": "https://github.com/eliasnemr",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "tokens",
+      "nft",
+      "launch",
+      "create"
+    ]
+  },
+  {
+    "name": "V",
+    "description": "Decentralized on-chain social platform and self-sovereign AI agent experiment built on Minima. Share posts, articles and polls with true censorship resistance.",
+    "category": "Communication",
+    "url": "https://vita-agent.ai",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "social",
+      "ai",
+      "decentralized",
+      "posts",
+      "vita"
+    ]
+  },
+  {
+    "name": "Vestr",
+    "description": "Portfolio and vesting management tool for Minima tokens.",
+    "category": "Finance",
+    "url": "https://minima.global",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "portfolio",
+      "vesting",
+      "tokens"
+    ]
+  },
+  {
+    "name": "VOX",
+    "description": "Censorship-proof social media protocol built on Minima.",
+    "category": "Communication",
+    "url": "https://monthrie.github.io/minidapp-store/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "social",
+      "censorship-resistant",
+      "protocol"
+    ]
+  },
+  {
+    "name": "Wallet",
+    "description": "Official Minima wallet for sending, receiving, and managing MINIMA tokens and custom tokens.",
+    "category": "Finance",
+    "url": "https://minima.global/get-minima",
+    "github": "https://github.com/minima-global/Wallet",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": [
+      "wallet",
+      "tokens",
+      "official"
+    ]
+  },
+  {
+    "name": "Watcher",
+    "description": "Monitor your Minima node status, uptime, and performance in real time.",
+    "category": "Infrastructure",
+    "url": "https://minima.global",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "monitoring",
+      "node",
+      "uptime"
+    ]
+  },
+  {
+    "name": "Yepp!",
+    "description": "Community social application on Minima.",
+    "category": "Communication",
+    "url": "https://jazminima.github.io/dappstore/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "social",
+      "community"
+    ]
   }
 ]
