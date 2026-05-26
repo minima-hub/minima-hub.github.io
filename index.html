@@ -190,12 +190,20 @@
       gap: 7px;
     }
 
-    .rgroup-list li { display: flex; align-items: baseline; gap: 7px; }
+    .rgroup-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
 
     .rgroup-list a {
       font-size: 0.88rem;
       color: var(--text);
       transition: color 0.18s;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      min-width: 0;
     }
 
     .rgroup-list a:hover { color: var(--accent); }
@@ -203,6 +211,7 @@
     .r-note {
       font-size: 0.75rem;
       color: var(--muted);
+      flex-shrink: 0;
     }
 
     .r-copy {
@@ -215,6 +224,9 @@
       border: none;
       padding: 0;
       text-align: left;
+      overflow-wrap: break-word;
+      word-break: break-all;
+      min-width: 0;
     }
 
     .r-copy:hover { color: var(--accent); }
@@ -586,16 +598,26 @@
 
     @media (max-width: 860px) {
       nav { display: none; }
-
       .dapps-controls { flex-direction: column; align-items: flex-start; }
       .search-box input { width: 140px; }
-
-      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
+      .resource-groups { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px 24px; }
+    }
+
+    @media (max-width: 520px) {
+      .nav-inner { gap: 8px; }
+      .btn-submit { padding: 6px 12px; font-size: 0.78rem; }
+      .resource-groups { grid-template-columns: 1fr 1fr; gap: 20px 16px; }
       .dapps-grid { grid-template-columns: 1fr; }
-      .resource-grid { grid-template-columns: 1fr; }
+      .cat-row { gap: 8px; }
+      section { padding: 28px 0; }
+    }
+
+    @media (max-width: 380px) {
+      .resource-groups { grid-template-columns: 1fr; }
     }
   </style>
 </head>
