@@ -57,6 +57,17 @@
       gap: 24px;
     }
 
+    .nav-icon {
+      display: flex;
+      align-items: center;
+      color: var(--muted);
+      transition: color 0.18s;
+      flex-shrink: 0;
+    }
+
+    .nav-icon:hover { color: var(--accent); }
+    .nav-icon svg { width: 20px; height: 20px; }
+
     .site-name {
       font-size: 1.05rem;
       font-weight: 700;
@@ -589,6 +600,9 @@
         <a href="#resources">Resources</a>
         <a href="#dapps">dApps</a>
       </nav>
+      <a href="https://t.me/theminimahub" target="_blank" rel="noopener" class="nav-icon" title="Telegram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.328-.373-.115l-6.869 4.332-2.97-.924c-.643-.204-.657-.643.136-.953l11.6-4.47c.537-.194 1.006.128.832.941z"/></svg>
+      </a>
       <a href="https://github.com/minima-hub/minima-hub.github.io/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="btn-submit">
         + Submit
       </a>
@@ -648,6 +662,7 @@
         <div class="footer-note">Open source, community maintained. Not affiliated with Minima Global.</div>
       </div>
       <div class="footer-links">
+        <a href="https://t.me/theminimahub" target="_blank" rel="noopener">Telegram</a>
         <a href="https://github.com/minima-hub/minima-hub.github.io" target="_blank" rel="noopener">GitHub</a>
         <a href="https://github.com/minima-hub/minima-hub.github.io/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute</a>
       </div>
