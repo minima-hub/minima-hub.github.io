@@ -782,9 +782,8 @@
           resources = await resourcesRes.json();
         }
         allDapps = dapps;
-        renderDapps(allDapps);
         renderResources(resources);
-        document.getElementById('dapps-count').textContent = `${allDapps.length} dApps`;
+        filterDapps();
       } catch (err) {
         document.getElementById('dapps-grid').innerHTML = '<div class="empty-state">Could not load data.</div>';
         document.getElementById('resource-groups').innerHTML = '<div class="empty-state">Could not load resource data.</div>';
