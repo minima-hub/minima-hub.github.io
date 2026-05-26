@@ -50,11 +50,21 @@
     }
 
     .nav-inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 13px 0;
+      gap: 16px;
+    }
+
+    .nav-center {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 13px 0;
-      gap: 24px;
+      gap: 20px;
+    }
+
+    .nav-inner .btn-submit {
+      justify-self: end;
     }
 
     .nav-icon {
@@ -596,13 +606,15 @@
         <img src="favicon.svg" class="site-logo" alt="" />
         Minima Hub
       </a>
-      <nav>
-        <a href="#resources">Resources</a>
-        <a href="#dapps">dApps</a>
-      </nav>
-      <a href="https://t.me/theminimahub" target="_blank" rel="noopener" class="nav-icon" title="Telegram">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.328-.373-.115l-6.869 4.332-2.97-.924c-.643-.204-.657-.643.136-.953l11.6-4.47c.537-.194 1.006.128.832.941z"/></svg>
-      </a>
+      <div class="nav-center">
+        <nav>
+          <a href="#resources">Resources</a>
+          <a href="#dapps">dApps</a>
+        </nav>
+        <a href="https://t.me/theminimahub" target="_blank" rel="noopener" class="nav-icon" title="Telegram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.328-.373-.115l-6.869 4.332-2.97-.924c-.643-.204-.657-.643.136-.953l11.6-4.47c.537-.194 1.006.128.832.941z"/></svg>
+        </a>
+      </div>
       <a href="https://github.com/minima-hub/minima-hub.github.io/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="btn-submit">
         + Submit
       </a>
