@@ -703,7 +703,6 @@
       container.innerHTML = data.groups.map(group => {
         const items = group.items.map(item => {
           if (group.copyable || !item.url) {
-            // Copyable item - copy URL if available, else copy name (e.g. host:port for MegaMMR)
             const copyValue = item.url || item.name;
             const note = item.note ? `<span class="r-note">${item.note}</span>` : '';
             return `<li><button class="r-copy" data-copy="${copyValue}" title="Click to copy">${item.name}</button>${note}</li>`;
@@ -715,7 +714,6 @@
         return `<div><div class="rgroup-label">${group.label}</div>${note}<ul class="rgroup-list">${items}</ul></div>`;
       }).join('');
 
-      // Copy-to-clipboard for copyable items
       container.querySelectorAll('.r-copy').forEach(btn => {
         btn.addEventListener('click', () => {
           navigator.clipboard.writeText(btn.dataset.copy).then(() => {
