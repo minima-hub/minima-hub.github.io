@@ -8,6 +8,7 @@
   <meta property="og:title" content="Minima Hub" />
   <meta property="og:description" content="Community-curated directory for Minima nodes, dApps, and libraries." />
   <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <style>
     :root {
       --bg: #070d09;
@@ -790,15 +791,25 @@
 
     async function loadData() {
       try {
-        const [dappsRes, resourcesRes] = await Promise.all([fetch('data/dapps.json'), fetch('data/resources.json')]);
-        allDapps = await dappsRes.json();
-        const resources = await resourcesRes.json();
+        let dapps, resources;
+        if (window.__MINIMA_DATA__) {
+          dapps = window.__MINIMA_DATA__.dapps;
+          resources = window.__MINIMA_DATA__.resources;
+        } else {
+          const [dappsRes, resourcesRes] = await Promise.all([
+            fetch('data/dapps.json'),
+            fetch('data/resources.json')
+          ]);
+          dapps = await dappsRes.json();
+          resources = await resourcesRes.json();
+        }
+        allDapps = dapps;
         renderDapps(allDapps);
         renderResources(resources);
         renderLibraries(resources.libraries || []);
         document.getElementById('dapps-count').textContent = `${allDapps.length} dApps`;
       } catch (err) {
-        document.getElementById('dapps-grid').innerHTML = '<div class="empty-state">Could not load data. Run via a local server or GitHub Pages.</div>';
+        document.getElementById('dapps-grid').innerHTML = '<div class="empty-state">Could not load data.</div>';
         document.getElementById('resource-groups').innerHTML = '<div class="empty-state">Could not load resource data.</div>';
         document.getElementById('lib-grid').innerHTML = '<div class="empty-state">Could not load library data.</div>';
       }
