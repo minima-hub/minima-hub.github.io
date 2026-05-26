@@ -6,7 +6,8 @@
         { "name": "minima.global", "url": "https://minima.global", "note": "Official website" },
         { "name": "docs.minima.global", "url": "https://docs.minima.global", "note": "Developer documentation" },
         { "name": "github.com/minima-global", "url": "https://github.com/minima-global", "note": "Open source repositories" },
-        { "name": "explorer.minima.global", "url": "https://explorer.minima.global", "note": "Block explorer" }
+        { "name": "explorer.minima.global", "url": "https://explorer.minima.global", "note": "Block explorer" },
+        { "name": "Onchain Watch", "url": "https://stablescouncil.org/onchain-watch.html", "note": "Stables Council" }
       ]
     },
     {
@@ -26,6 +27,13 @@
         { "name": "megammr.minima.global:9001", "url": null, "note": "" },
         { "name": "eurobuddha.com:9001", "url": null, "note": "" },
         { "name": "spartacusrex.com:9001", "url": null, "note": "" }
+      ]
+    },
+    {
+      "label": "Archive Nodes",
+      "copyable": true,
+      "items": [
+        { "name": "eurobuddha.com/archive.raw.dat", "url": null, "note": "Eurobuddha" }
       ]
     },
     {
