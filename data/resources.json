@@ -63,7 +63,7 @@
       "label": "Libraries & SDKs",
       "items": [
         { "name": "MDS - Minima Development System", "url": "https://docs.minima.global/docs/development", "note": "JavaScript · Official" },
-        { "name": "minima.js", "url": "https://github.com/minima-global/minima.js", "note": "JavaScript · Archived" }
+        { "name": "minima.js", "url": "https://github.com/minima-global/Minima", "note": "JavaScript · Archived" }
       ]
     },
     {
