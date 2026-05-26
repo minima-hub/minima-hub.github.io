@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minima Hub - The Minima Ecosystem Directory</title>
-  <meta name="description" content="Community-curated hub for Minima nodes, libraries, dApps, and developer resources. The go-to reference for the Minima ecosystem." />
+  <title>Minima Hub</title>
+  <meta name="description" content="Community-curated directory for Minima nodes, dApps, and libraries." />
   <meta property="og:title" content="Minima Hub" />
-  <meta property="og:description" content="Community-curated hub for Minima nodes, libraries, and dApps." />
+  <meta property="og:description" content="Community-curated directory for Minima nodes, dApps, and libraries." />
   <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Minima Hub" />
-  <meta name="twitter:description" content="Community-curated hub for Minima nodes, libraries, and dApps." />
   <style>
     :root {
       --bg: #070d09;
@@ -20,7 +17,6 @@
       --muted: rgba(232, 245, 238, 0.62);
       --line: rgba(26, 232, 123, 0.13);
       --accent: #1ae87b;
-      --accent-dark: #12a857;
       --accent-soft: rgba(26, 232, 123, 0.10);
       --accent-border: rgba(26, 232, 123, 0.22);
       --max: 1100px;
@@ -39,7 +35,6 @@
     }
 
     a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
     .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
 
     /* ---- HEADER ---- */
@@ -48,7 +43,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(7, 13, 9, 0.88);
+      background: rgba(7, 13, 9, 0.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--line);
     }
@@ -57,38 +52,37 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 14px 0;
+      padding: 13px 0;
       gap: 24px;
     }
 
     .site-name {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 700;
       letter-spacing: -0.02em;
       color: var(--text);
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 9px;
       white-space: nowrap;
     }
 
     .site-name .dot {
-      width: 9px;
-      height: 9px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: var(--accent);
-      display: inline-block;
       flex-shrink: 0;
     }
 
     nav {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 26px;
     }
 
     nav a {
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       color: var(--muted);
       transition: color 0.18s;
       font-weight: 500;
@@ -99,13 +93,12 @@
     .btn-submit {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 8px 18px;
+      padding: 7px 16px;
       border-radius: 999px;
       background: var(--accent-soft);
       border: 1px solid var(--accent-border);
       color: var(--accent);
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       font-weight: 600;
       transition: background 0.18s, border-color 0.18s;
       white-space: nowrap;
@@ -116,329 +109,16 @@
       border-color: rgba(26, 232, 123, 0.4);
     }
 
-    /* ---- HERO ---- */
-
-    .hero {
-      padding: 80px 0 72px;
-      border-bottom: 1px solid var(--line);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: -60px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 700px;
-      height: 400px;
-      background: radial-gradient(ellipse, rgba(26, 232, 123, 0.07) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 5px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--accent-border);
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 28px;
-    }
-
-    .hero-badge .pulse {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--accent);
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-
-    .hero h1 {
-      font-size: clamp(2.8rem, 6vw, 5.2rem);
-      line-height: 1.0;
-      letter-spacing: -0.045em;
-      color: var(--text);
-      max-width: 14ch;
-      margin-bottom: 22px;
-    }
-
-    .hero h1 span { color: var(--accent); }
-
-    .hero-lead {
-      font-size: clamp(1.05rem, 1.5vw, 1.25rem);
-      color: var(--muted);
-      max-width: 54ch;
-      line-height: 1.72;
-      margin-bottom: 40px;
-    }
-
-    .hero-stats {
-      display: flex;
-      gap: 36px;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
-
-    .stat {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .stat-num {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.04em;
-      color: var(--accent);
-      line-height: 1;
-    }
-
-    .stat-label {
-      font-size: 0.82rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .hero-ctas {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      padding: 13px 28px;
-      border-radius: 999px;
-      background: var(--accent);
-      color: #050e07;
-      font-size: 0.95rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      transition: background 0.18s, transform 0.15s;
-    }
-
-    .btn-primary:hover { background: #22f589; transform: translateY(-1px); }
-
-    .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 13px 28px;
-      border-radius: 999px;
-      border: 1px solid var(--accent-border);
-      color: var(--text);
-      font-size: 0.95rem;
-      font-weight: 600;
-      transition: border-color 0.18s, background 0.18s;
-    }
-
-    .btn-secondary:hover {
-      border-color: rgba(26, 232, 123, 0.45);
-      background: var(--accent-soft);
-    }
-
     /* ---- SECTIONS ---- */
 
     section {
-      padding: 64px 0;
+      padding: 40px 0;
       border-bottom: 1px solid var(--line);
     }
 
     section:last-of-type { border-bottom: none; }
 
-    .section-label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
-
-    .section-title {
-      font-size: clamp(1.6rem, 2.8vw, 2.2rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      color: var(--text);
-      margin-bottom: 14px;
-      line-height: 1.1;
-    }
-
-    .section-desc {
-      font-size: clamp(1rem, 1.3vw, 1.15rem);
-      color: var(--muted);
-      max-width: 58ch;
-      margin-bottom: 40px;
-      line-height: 1.72;
-    }
-
-    /* ---- ABOUT MINIMA ---- */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-
-    .about-text p {
-      color: var(--muted);
-      font-size: 1.08rem;
-      line-height: 1.8;
-      margin-bottom: 16px;
-    }
-
-    .about-text p:last-child { margin-bottom: 0; }
-
-    .about-links {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .about-link-card {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 20px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background: var(--surface);
-      transition: border-color 0.18s, background 0.18s;
-    }
-
-    .about-link-card:hover {
-      border-color: var(--accent-border);
-      background: var(--surface2);
-    }
-
-    .about-link-card .link-title {
-      font-weight: 600;
-      font-size: 0.95rem;
-      margin-bottom: 2px;
-    }
-
-    .about-link-card .link-url {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .about-link-card .arrow {
-      color: var(--muted);
-      font-size: 1.1rem;
-      flex-shrink: 0;
-    }
-
-    /* ---- RESOURCE TABS ---- */
-
-    .resource-tabs {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 28px;
-      flex-wrap: wrap;
-    }
-
-    .rtab {
-      padding: 8px 18px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: transparent;
-      color: var(--muted);
-      font-size: 0.88rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.18s;
-      font-family: inherit;
-    }
-
-    .rtab:hover { border-color: var(--accent-border); color: var(--text); }
-
-    .rtab.active {
-      background: var(--accent-soft);
-      border-color: var(--accent-border);
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    .resource-panel { display: none; }
-    .resource-panel.active { display: block; }
-
-    .resource-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 14px;
-    }
-
-    .resource-card {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      padding: 20px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background: var(--surface);
-      transition: border-color 0.18s, background 0.18s, transform 0.15s;
-    }
-
-    .resource-card:hover {
-      border-color: var(--accent-border);
-      background: var(--surface2);
-      transform: translateY(-2px);
-    }
-
-    .resource-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      background: var(--accent-soft);
-      border: 1px solid var(--accent-border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--accent);
-      flex-shrink: 0;
-    }
-
-    .resource-icon svg { width: 18px; height: 18px; }
-
-    .resource-card-title {
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    .resource-card-desc {
-      font-size: 0.85rem;
-      color: var(--muted);
-      line-height: 1.6;
-      flex: 1;
-    }
-
-    .resource-card-link {
-      font-size: 0.8rem;
-      color: var(--accent);
-      font-weight: 500;
-      margin-top: 4px;
-    }
-
-    /* ---- dAPPS DIRECTORY ---- */
-
-    .dapps-controls {
+    .section-head {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -447,19 +127,101 @@
       flex-wrap: wrap;
     }
 
-    .cat-tabs {
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* ---- RESOURCE GROUPS ---- */
+
+    .resource-groups {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 28px 32px;
+    }
+
+    .rgroup-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .rgroup-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .rgroup-list {
+      list-style: none;
       display: flex;
-      gap: 6px;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .rgroup-list li { display: flex; align-items: baseline; gap: 7px; }
+
+    .rgroup-list a {
+      font-size: 0.88rem;
+      color: var(--text);
+      transition: color 0.18s;
+    }
+
+    .rgroup-list a:hover { color: var(--accent); }
+
+    .r-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .r-copy {
+      font-size: 0.84rem;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      color: var(--text);
+      cursor: pointer;
+      transition: color 0.18s;
+      background: none;
+      border: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .r-copy:hover { color: var(--accent); }
+
+    .r-copy.copied { color: var(--accent); }
+
+    /* ---- dAPPS ---- */
+
+    .dapps-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       flex-wrap: wrap;
     }
 
+    .cat-tabs {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+
     .cat-tab {
-      padding: 7px 16px;
+      padding: 6px 14px;
       border-radius: 999px;
       border: 1px solid var(--line);
       background: transparent;
       color: var(--muted);
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.18s;
@@ -478,19 +240,20 @@
     .search-box {
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding: 9px 16px;
+      gap: 8px;
+      padding: 7px 14px;
       border-radius: 999px;
       border: 1px solid var(--line);
       background: var(--surface);
       transition: border-color 0.18s;
+      flex-shrink: 0;
     }
 
     .search-box:focus-within { border-color: var(--accent-border); }
 
     .search-box svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       color: var(--muted);
       flex-shrink: 0;
     }
@@ -500,34 +263,33 @@
       border: none;
       outline: none;
       color: var(--text);
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       font-family: inherit;
-      min-width: 180px;
+      width: 160px;
     }
 
     .search-box input::placeholder { color: var(--muted); }
 
     .dapps-count {
-      font-size: 0.84rem;
+      font-size: 0.78rem;
       color: var(--muted);
-      margin-bottom: 20px;
+      margin: 14px 0 16px;
     }
 
     .dapps-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 14px;
     }
 
     .dapp-card {
       display: flex;
       flex-direction: column;
-      padding: 22px;
+      padding: 18px 20px;
       border-radius: var(--radius);
       border: 1px solid var(--line);
       background: var(--surface);
       transition: border-color 0.18s, background 0.18s, transform 0.15s;
-      position: relative;
     }
 
     .dapp-card:hover {
@@ -540,12 +302,12 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 12px;
+      gap: 10px;
+      margin-bottom: 4px;
     }
 
     .dapp-name {
-      font-size: 1.0rem;
+      font-size: 0.95rem;
       font-weight: 700;
       color: var(--text);
       line-height: 1.2;
@@ -553,16 +315,14 @@
 
     .dapp-badges {
       display: flex;
-      gap: 6px;
+      gap: 5px;
       flex-shrink: 0;
-      flex-wrap: wrap;
-      justify-content: flex-end;
     }
 
     .badge {
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 600;
-      padding: 3px 9px;
+      padding: 2px 8px;
       border-radius: 999px;
       white-space: nowrap;
     }
@@ -588,11 +348,11 @@
     .badge-archived {
       background: rgba(180, 180, 180, 0.12);
       border: 1px solid rgba(180, 180, 180, 0.28);
-      color: #999;
+      color: #888;
     }
 
     .dapp-category {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: var(--muted);
       font-weight: 500;
       letter-spacing: 0.04em;
@@ -601,51 +361,48 @@
     }
 
     .dapp-desc {
-      font-size: 0.9rem;
+      font-size: 0.86rem;
       color: var(--muted);
-      line-height: 1.65;
+      line-height: 1.6;
       flex: 1;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
 
     .dapp-tags {
       display: flex;
-      gap: 6px;
+      gap: 5px;
       flex-wrap: wrap;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .tag {
-      font-size: 0.72rem;
-      padding: 2px 8px;
+      font-size: 0.7rem;
+      padding: 2px 7px;
       border-radius: 4px;
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.04);
       color: var(--muted);
       border: 1px solid rgba(255, 255, 255, 0.07);
     }
 
     .dapp-links {
       display: flex;
-      gap: 10px;
+      gap: 8px;
     }
 
     .dapp-link {
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      padding: 6px 14px;
+      padding: 5px 12px;
       border-radius: 999px;
       border: 1px solid var(--line);
       color: var(--text);
       transition: all 0.18s;
     }
 
-    .dapp-link:hover {
-      border-color: var(--accent-border);
-      color: var(--accent);
-    }
+    .dapp-link:hover { border-color: var(--accent-border); color: var(--accent); }
 
     .dapp-link.primary {
       background: var(--accent-soft);
@@ -654,27 +411,26 @@
     }
 
     .dapp-link.primary:hover { background: rgba(26, 232, 123, 0.18); }
-
-    .dapp-link svg { width: 13px; height: 13px; }
+    .dapp-link svg { width: 12px; height: 12px; }
 
     .empty-state {
+      grid-column: 1 / -1;
       text-align: center;
-      padding: 60px 20px;
+      padding: 48px 20px;
       color: var(--muted);
+      font-size: 0.88rem;
     }
-
-    .empty-state p { margin-top: 8px; font-size: 0.9rem; }
 
     /* ---- LIBRARIES ---- */
 
     .lib-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 14px;
     }
 
     .lib-card {
-      padding: 24px;
+      padding: 18px 20px;
       border-radius: var(--radius);
       border: 1px solid var(--line);
       background: var(--surface);
@@ -691,35 +447,37 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      gap: 10px;
     }
 
     .lib-name {
       font-weight: 700;
-      font-size: 1.0rem;
+      font-size: 0.95rem;
       color: var(--text);
     }
 
     .lib-lang {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 600;
-      padding: 3px 10px;
+      padding: 2px 9px;
       border-radius: 999px;
       background: var(--accent-soft);
       border: 1px solid var(--accent-border);
       color: var(--accent);
+      white-space: nowrap;
     }
 
     .lib-desc {
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       color: var(--muted);
-      line-height: 1.65;
-      margin-bottom: 18px;
+      line-height: 1.6;
+      margin-bottom: 14px;
     }
 
     .lib-links {
       display: flex;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
     }
 
@@ -727,9 +485,9 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      padding: 5px 12px;
+      padding: 4px 11px;
       border-radius: 999px;
       border: 1px solid var(--line);
       color: var(--muted);
@@ -737,45 +495,12 @@
     }
 
     .lib-link:hover { border-color: var(--accent-border); color: var(--accent); }
-    .lib-link svg { width: 13px; height: 13px; }
-
-    /* ---- CONTRIBUTE CTA ---- */
-
-    .contribute-block {
-      padding: 48px;
-      border-radius: 14px;
-      border: 1px solid var(--accent-border);
-      background: linear-gradient(135deg, rgba(26, 232, 123, 0.06) 0%, rgba(7, 13, 9, 0) 60%);
-      text-align: center;
-    }
-
-    .contribute-block h2 {
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      color: var(--text);
-      margin-bottom: 12px;
-    }
-
-    .contribute-block p {
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 54ch;
-      margin: 0 auto 28px;
-      line-height: 1.72;
-    }
-
-    .contribute-ctas {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+    .lib-link svg { width: 12px; height: 12px; }
 
     /* ---- FOOTER ---- */
 
     footer {
-      padding: 36px 0;
+      padding: 24px 0;
       border-top: 1px solid var(--line);
     }
 
@@ -783,22 +508,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
-    .footer-left {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
     .footer-brand {
-      font-weight: 700;
-      font-size: 0.95rem;
       display: flex;
       align-items: center;
       gap: 8px;
+      font-weight: 600;
+      font-size: 0.88rem;
     }
 
     .footer-brand .dot {
@@ -809,18 +528,20 @@
     }
 
     .footer-note {
-      font-size: 0.8rem;
+      font-size: 0.76rem;
       color: var(--muted);
+      margin-top: 2px;
     }
 
     .footer-links {
       display: flex;
-      gap: 18px;
+      gap: 16px;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .footer-links a {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--muted);
       transition: color 0.18s;
     }
@@ -831,22 +552,22 @@
 
     .loading-state {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 60px 20px;
-      gap: 14px;
+      gap: 12px;
+      padding: 48px 20px;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.86rem;
     }
 
     .spinner {
-      width: 28px;
-      height: 28px;
+      width: 22px;
+      height: 22px;
       border: 2px solid var(--line);
       border-top-color: var(--accent);
       border-radius: 50%;
       animation: spin 0.7s linear infinite;
+      flex-shrink: 0;
     }
 
     @keyframes spin { to { transform: rotate(360deg); } }
@@ -854,41 +575,23 @@
     /* ---- RESPONSIVE ---- */
 
     @media (max-width: 860px) {
-      .hero { padding: 56px 0 52px; }
-
-      .about-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-
-      .dapps-controls {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .contribute-block {
-        padding: 32px 24px;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
       nav { display: none; }
+
+      .dapps-controls { flex-direction: column; align-items: flex-start; }
+      .search-box input { width: 140px; }
+
+      .footer-inner { flex-direction: column; align-items: flex-start; }
     }
 
     @media (max-width: 600px) {
       .dapps-grid { grid-template-columns: 1fr; }
       .lib-grid { grid-template-columns: 1fr; }
       .resource-grid { grid-template-columns: 1fr; }
-      .hero-stats { gap: 24px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <div class="wrap nav-inner">
       <a href="#" class="site-name">
@@ -896,223 +599,87 @@
         Minima Hub
       </a>
       <nav>
-        <a href="#about">About</a>
         <a href="#resources">Resources</a>
         <a href="#dapps">dApps</a>
         <a href="#libraries">Libraries</a>
       </nav>
       <a href="https://github.com/Charles0xhorizonxyz/minima-hub/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="btn-submit">
-        + Submit dApp
+        + Submit
       </a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-badge">
-        <span class="pulse"></span>
-        Community curated
-      </div>
-      <h1>Everything <span>Minima</span>.<br>In one place.</h1>
-      <p class="hero-lead">
-        The community-curated hub for Minima nodes, developer libraries, and dApps.
-        Find what you need, or add what is missing.
-      </p>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num" id="stat-dapps">--</span>
-          <span class="stat-label">dApps listed</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num" id="stat-libs">--</span>
-          <span class="stat-label">Libraries</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num" id="stat-resources">--</span>
-          <span class="stat-label">Resources</span>
-        </div>
-      </div>
-      <div class="hero-ctas">
-        <a href="#dapps" class="btn-primary">Explore dApps</a>
-        <a href="https://github.com/Charles0xhorizonxyz/minima-hub" target="_blank" rel="noopener" class="btn-secondary">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
-          Contribute on GitHub
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT MINIMA -->
-  <section id="about">
-    <div class="wrap">
-      <div class="section-label">What is Minima</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Minima is a lightweight blockchain designed to run a complete node on any device - mobile, IoT, desktop, or server. Every participant runs a full node, making the network truly decentralized with no single point of failure.
-          </p>
-          <p>
-            Built on the principle that a blockchain is only secure if anyone can validate it, Minima keeps the protocol small enough to run on a Raspberry Pi or Android phone while maintaining full network integrity.
-          </p>
-          <p>
-            dApps on Minima are called MiniDApps. They run inside the node's browser interface and use MDS (Minima Development System) to interact with the blockchain directly.
-          </p>
-        </div>
-        <div class="about-links">
-          <a href="https://minima.global" target="_blank" rel="noopener" class="about-link-card">
-            <div>
-              <div class="link-title">minima.global</div>
-              <div class="link-url">Official website</div>
-            </div>
-            <span class="arrow">&#8599;</span>
-          </a>
-          <a href="https://docs.minima.global" target="_blank" rel="noopener" class="about-link-card">
-            <div>
-              <div class="link-title">docs.minima.global</div>
-              <div class="link-url">Developer documentation</div>
-            </div>
-            <span class="arrow">&#8599;</span>
-          </a>
-          <a href="https://github.com/minima-global" target="_blank" rel="noopener" class="about-link-card">
-            <div>
-              <div class="link-title">github.com/minima-global</div>
-              <div class="link-url">Open source repositories</div>
-            </div>
-            <span class="arrow">&#8599;</span>
-          </a>
-          <a href="https://explorer.minima.global" target="_blank" rel="noopener" class="about-link-card">
-            <div>
-              <div class="link-title">explorer.minima.global</div>
-              <div class="link-url">Block explorer</div>
-            </div>
-            <span class="arrow">&#8599;</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESOURCES -->
   <section id="resources">
     <div class="wrap">
-      <div class="section-label">Resources</div>
-      <h2 class="section-title">Everything you need to get started</h2>
-      <p class="section-desc">Node setup guides, documentation, and community links - all in one place.</p>
-
-      <div class="resource-tabs">
-        <button class="rtab active" data-panel="node">Run a Node</button>
-        <button class="rtab" data-panel="docs">Documentation</button>
-        <button class="rtab" data-panel="community">Community</button>
+      <div class="section-head">
+        <span class="section-label">Resources</span>
       </div>
-
-      <div id="panel-node" class="resource-panel active">
-        <div id="node-grid" class="resource-grid">
-          <div class="loading-state"><div class="spinner"></div></div>
-        </div>
-      </div>
-      <div id="panel-docs" class="resource-panel">
-        <div id="docs-grid" class="resource-grid"></div>
-      </div>
-      <div id="panel-community" class="resource-panel">
-        <div id="community-grid" class="resource-grid"></div>
+      <div id="resource-groups" class="resource-groups">
+        <div class="loading-state"><div class="spinner"></div></div>
       </div>
     </div>
   </section>
 
-  <!-- dAPPS DIRECTORY -->
   <section id="dapps">
     <div class="wrap">
-      <div class="section-label">dApps Directory</div>
-      <h2 class="section-title">MiniDApps built on Minima</h2>
-      <p class="section-desc">Community-curated list of dApps running on the Minima network. Missing one? Submit a PR on GitHub.</p>
-
-      <div class="dapps-controls">
-        <div class="cat-tabs" id="cat-tabs">
-          <button class="cat-tab active" data-cat="all">All</button>
-          <button class="cat-tab" data-cat="Finance">Finance</button>
-          <button class="cat-tab" data-cat="Tools">Tools</button>
-          <button class="cat-tab" data-cat="Communication">Communication</button>
-          <button class="cat-tab" data-cat="Infrastructure">Infrastructure</button>
-          <button class="cat-tab" data-cat="Developer">Developer</button>
-          <button class="cat-tab" data-cat="NFT">NFT</button>
-          <button class="cat-tab" data-cat="Gaming">Gaming</button>
-        </div>
+      <div class="section-head">
+        <span class="section-label">dApps</span>
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
           </svg>
-          <input type="text" id="search-input" placeholder="Search dApps..." aria-label="Search dApps" />
+          <input type="text" id="search-input" placeholder="Search..." aria-label="Search dApps" />
         </div>
       </div>
-
+      <div class="cat-tabs" id="cat-tabs">
+        <button class="cat-tab active" data-cat="all">All</button>
+        <button class="cat-tab" data-cat="Finance">Finance</button>
+        <button class="cat-tab" data-cat="Tools">Tools</button>
+        <button class="cat-tab" data-cat="Communication">Communication</button>
+        <button class="cat-tab" data-cat="Infrastructure">Infrastructure</button>
+        <button class="cat-tab" data-cat="Developer">Developer</button>
+        <button class="cat-tab" data-cat="NFT">NFT</button>
+        <button class="cat-tab" data-cat="Gaming">Gaming</button>
+      </div>
       <div class="dapps-count" id="dapps-count"></div>
       <div id="dapps-grid" class="dapps-grid">
-        <div class="loading-state"><div class="spinner"></div><span>Loading dApps...</span></div>
+        <div class="loading-state"><div class="spinner"></div><span>Loading...</span></div>
       </div>
     </div>
   </section>
 
-  <!-- LIBRARIES -->
   <section id="libraries">
     <div class="wrap">
-      <div class="section-label">Libraries and SDKs</div>
-      <h2 class="section-title">Build on Minima</h2>
-      <p class="section-desc">Official and community libraries for integrating Minima into your project.</p>
+      <div class="section-head">
+        <span class="section-label">Libraries &amp; SDKs</span>
+      </div>
       <div id="lib-grid" class="lib-grid">
         <div class="loading-state"><div class="spinner"></div></div>
       </div>
     </div>
   </section>
 
-  <!-- CONTRIBUTE -->
-  <section>
-    <div class="wrap">
-      <div class="contribute-block">
-        <h2>Add your dApp or resource</h2>
-        <p>
-          Minima Hub is open source and community-maintained. If you have built a dApp, library, or useful resource,
-          add it by submitting a Pull Request on GitHub. No HTML required - just edit a JSON file.
-        </p>
-        <div class="contribute-ctas">
-          <a href="https://github.com/Charles0xhorizonxyz/minima-hub/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="btn-primary">
-            Read the guide
-          </a>
-          <a href="https://github.com/Charles0xhorizonxyz/minima-hub/issues/new" target="_blank" rel="noopener" class="btn-secondary">
-            Open an issue
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer>
     <div class="wrap footer-inner">
-      <div class="footer-left">
-        <div class="footer-brand">
-          <span class="dot"></span>
-          Minima Hub
-        </div>
-        <div class="footer-note">Open source - community maintained. Not affiliated with Minima Global.</div>
+      <div>
+        <div class="footer-brand"><span class="dot"></span> Minima Hub</div>
+        <div class="footer-note">Open source, community maintained. Not affiliated with Minima Global.</div>
       </div>
       <div class="footer-links">
         <a href="https://github.com/Charles0xhorizonxyz/minima-hub" target="_blank" rel="noopener">GitHub</a>
         <a href="https://github.com/Charles0xhorizonxyz/minima-hub/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute</a>
         <a href="https://minima.global" target="_blank" rel="noopener">minima.global</a>
+        <a href="https://docs.minima.global" target="_blank" rel="noopener">Docs</a>
         <a href="https://0xhorizon.xyz" target="_blank" rel="noopener">0xHorizon</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // State
     let allDapps = [];
-    let allResources = {};
     let currentCategory = 'all';
     let searchQuery = '';
 
-    // SVG icons keyed by name
     const icons = {
       download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
       docker: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 0 0 .186-.186V3.574a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 0 0 .186-.186V6.29a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 0 0 .184-.186V6.29a.185.185 0 0 0-.185-.185H8.1a.185.185 0 0 0-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 0 0 .185-.186V6.29a.185.185 0 0 0-.185-.185H5.136a.186.186 0 0 0-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.186.186 0 0 0-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 0 0-.75.748 11.376 11.376 0 0 0 .692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 0 0 3.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg>',
@@ -1129,41 +696,40 @@
       link: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>'
     };
 
-    // Render a resource card
-    function resourceCardHTML(item) {
-      const icon = icons[item.icon] || icons.link;
-      return `
-        <a href="${item.url}" target="_blank" rel="noopener" class="resource-card">
-          <div class="resource-icon">${icon}</div>
-          <div class="resource-card-title">${item.title}</div>
-          <div class="resource-card-desc">${item.description}</div>
-          <div class="resource-card-link">Visit &rarr;</div>
-        </a>`;
-    }
-
-    // Render resources into grids
     function renderResources(data) {
-      const nodeGrid = document.getElementById('node-grid');
-      const docsGrid = document.getElementById('docs-grid');
-      const commGrid = document.getElementById('community-grid');
+      const container = document.getElementById('resource-groups');
+      if (!data.groups || !data.groups.length) { container.innerHTML = ''; return; }
+      container.innerHTML = data.groups.map(group => {
+        const items = group.items.map(item => {
+          if (group.copyable || !item.url) {
+            // Copyable item - copy URL if available, else copy name (e.g. host:port for MegaMMR)
+            const copyValue = item.url || item.name;
+            const note = item.note ? `<span class="r-note">${item.note}</span>` : '';
+            return `<li><button class="r-copy" data-copy="${copyValue}" title="Click to copy">${item.name}</button>${note}</li>`;
+          }
+          const note = item.note ? `<span class="r-note">${item.note}</span>` : '';
+          return `<li><a href="${item.url}" target="_blank" rel="noopener">${item.name}</a>${note}</li>`;
+        }).join('');
+        const note = group.note ? `<div class="rgroup-note">${group.note}</div>` : '';
+        return `<div><div class="rgroup-label">${group.label}</div>${note}<ul class="rgroup-list">${items}</ul></div>`;
+      }).join('');
 
-      if (data.node) nodeGrid.innerHTML = data.node.map(resourceCardHTML).join('');
-      if (data.docs) docsGrid.innerHTML = data.docs.map(resourceCardHTML).join('');
-      if (data.community) commGrid.innerHTML = data.community.map(resourceCardHTML).join('');
-
-      // Count for hero stats (node + docs + community)
-      const total = (data.node || []).length + (data.docs || []).length + (data.community || []).length;
-      document.getElementById('stat-resources').textContent = total;
+      // Copy-to-clipboard for copyable items
+      container.querySelectorAll('.r-copy').forEach(btn => {
+        btn.addEventListener('click', () => {
+          navigator.clipboard.writeText(btn.dataset.copy).then(() => {
+            const orig = btn.textContent;
+            btn.textContent = 'Copied!';
+            btn.classList.add('copied');
+            setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+          });
+        });
+      });
     }
 
-    // Render libraries
     function renderLibraries(libs) {
       const grid = document.getElementById('lib-grid');
-      if (!libs || !libs.length) {
-        grid.innerHTML = '<div class="empty-state">No libraries listed yet.</div>';
-        return;
-      }
-      document.getElementById('stat-libs').textContent = libs.length;
+      if (!libs || !libs.length) { grid.innerHTML = '<div class="empty-state">No libraries listed yet.</div>'; return; }
       grid.innerHTML = libs.map(lib => `
         <div class="lib-card">
           <div class="lib-card-top">
@@ -1179,24 +745,20 @@
         </div>`).join('');
     }
 
-    // Status badge HTML
     function statusBadge(status) {
       if (status === 'active') return '';
       const cls = { beta: 'badge-beta', experimental: 'badge-experimental', archived: 'badge-archived' }[status] || '';
       return `<span class="badge ${cls}">${status}</span>`;
     }
 
-    // Render dApp cards
     function renderDapps(list) {
       const grid = document.getElementById('dapps-grid');
       const count = document.getElementById('dapps-count');
-
       if (!list.length) {
-        grid.innerHTML = `<div class="empty-state"><div style="font-size:2rem">&#128269;</div><p>No dApps match your filter. Try a different category or search term.</p></div>`;
-        count.textContent = '0 dApps';
+        grid.innerHTML = '<div class="empty-state">No dApps match your filter.</div>';
+        count.textContent = '';
         return;
       }
-
       count.textContent = `${list.length} dApp${list.length === 1 ? '' : 's'}`;
       grid.innerHTML = list.map(d => `
         <div class="dapp-card">
@@ -1217,48 +779,31 @@
         </div>`).join('');
     }
 
-    // Filter and search logic
     function filterDapps() {
-      const filtered = allDapps.filter(d => {
+      const q = searchQuery.toLowerCase();
+      renderDapps(allDapps.filter(d => {
         const catMatch = currentCategory === 'all' || d.category === currentCategory;
-        const q = searchQuery.toLowerCase();
-        const searchMatch = !q ||
-          d.name.toLowerCase().includes(q) ||
-          d.description.toLowerCase().includes(q) ||
-          (d.tags && d.tags.some(t => t.toLowerCase().includes(q)));
+        const searchMatch = !q || d.name.toLowerCase().includes(q) || d.description.toLowerCase().includes(q) || (d.tags && d.tags.some(t => t.toLowerCase().includes(q)));
         return catMatch && searchMatch;
-      });
-      renderDapps(filtered);
+      }));
     }
 
-    // Load all data
     async function loadData() {
       try {
-        const [dappsRes, resourcesRes] = await Promise.all([
-          fetch('data/dapps.json'),
-          fetch('data/resources.json')
-        ]);
-
+        const [dappsRes, resourcesRes] = await Promise.all([fetch('data/dapps.json'), fetch('data/resources.json')]);
         allDapps = await dappsRes.json();
-        allResources = await resourcesRes.json();
-
-        document.getElementById('stat-dapps').textContent = allDapps.length;
-
+        const resources = await resourcesRes.json();
         renderDapps(allDapps);
-        renderResources(allResources);
-        renderLibraries(allResources.libraries || []);
-
+        renderResources(resources);
+        renderLibraries(resources.libraries || []);
+        document.getElementById('dapps-count').textContent = `${allDapps.length} dApps`;
       } catch (err) {
-        document.getElementById('dapps-grid').innerHTML =
-          '<div class="empty-state"><p>Could not load dApp data. Open this page via a local server or GitHub Pages.</p></div>';
-        document.getElementById('node-grid').innerHTML =
-          '<div class="empty-state"><p>Could not load resource data.</p></div>';
-        document.getElementById('lib-grid').innerHTML =
-          '<div class="empty-state"><p>Could not load library data.</p></div>';
+        document.getElementById('dapps-grid').innerHTML = '<div class="empty-state">Could not load data. Run via a local server or GitHub Pages.</div>';
+        document.getElementById('resource-groups').innerHTML = '<div class="empty-state">Could not load resource data.</div>';
+        document.getElementById('lib-grid').innerHTML = '<div class="empty-state">Could not load library data.</div>';
       }
     }
 
-    // Category tabs
     document.getElementById('cat-tabs').addEventListener('click', e => {
       const tab = e.target.closest('.cat-tab');
       if (!tab) return;
@@ -1268,23 +813,11 @@
       filterDapps();
     });
 
-    // Search
     document.getElementById('search-input').addEventListener('input', e => {
       searchQuery = e.target.value.trim();
       filterDapps();
     });
 
-    // Resource tabs
-    document.querySelectorAll('.rtab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        document.querySelectorAll('.rtab').forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.resource-panel').forEach(p => p.classList.remove('active'));
-        tab.classList.add('active');
-        document.getElementById(`panel-${tab.dataset.panel}`).classList.add('active');
-      });
-    });
-
-    // Init
     loadData();
   </script>
 

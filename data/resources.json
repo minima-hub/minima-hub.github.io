@@ -1,86 +1,75 @@
 {
-  "node": [
+  "groups": [
     {
-      "title": "Official Node Download",
-      "description": "Run a Minima node on desktop, Android, or server. Official download from minima.global.",
-      "url": "https://minima.global/get-minima",
-      "icon": "download"
+      "label": "Official",
+      "items": [
+        { "name": "minima.global", "url": "https://minima.global", "note": "Official website" },
+        { "name": "docs.minima.global", "url": "https://docs.minima.global", "note": "Developer documentation" },
+        { "name": "github.com/minima-global", "url": "https://github.com/minima-global", "note": "Open source repositories" },
+        { "name": "explorer.minima.global", "url": "https://explorer.minima.global", "note": "Block explorer" }
+      ]
     },
     {
-      "title": "Docker Image",
-      "description": "Run a Minima node in a Docker container. Best for server and headless deployments.",
-      "url": "https://hub.docker.com/r/minimaglobal/minima",
-      "icon": "docker"
+      "label": "Node Setup",
+      "items": [
+        { "name": "Download", "url": "https://minima.global/get-minima", "note": "Desktop, Android, server" },
+        { "name": "Docker Image", "url": "https://hub.docker.com/r/minimaglobal/minima", "note": "minimaglobal/minima" },
+        { "name": "Raspberry Pi Guide", "url": "https://docs.minima.global/docs/runanode/rpi-arm64", "note": "" },
+        { "name": "VPS / Linux Guide", "url": "https://docs.minima.global/docs/runanode/linux_vps", "note": "" },
+        { "name": "Terminal Commands", "url": "https://docs.minima.global/docs/runanode/terminal_commands", "note": "Full command reference" }
+      ]
     },
     {
-      "title": "Raspberry Pi Setup",
-      "description": "Run a full Minima node on a Raspberry Pi. Step-by-step guide in the official docs.",
-      "url": "https://docs.minima.global/docs/runanode/rpi-arm64",
-      "icon": "chip"
+      "label": "MegaMMR Nodes",
+      "note": "For QuickSync, Seed Phrase Import, or Backup Restore - enter in Security settings",
+      "copyable": true,
+      "items": [
+        { "name": "megammr.minima.global:9001", "url": null, "note": "" },
+        { "name": "eurobuddha.com:9001", "url": null, "note": "" },
+        { "name": "spartacusrex.com:9001", "url": null, "note": "" }
+      ]
     },
     {
-      "title": "VPS / Linux Setup",
-      "description": "Deploy a Minima node on any Linux VPS or cloud server.",
-      "url": "https://docs.minima.global/docs/runanode/linux_vps",
-      "icon": "server"
-    }
-  ],
-  "docs": [
-    {
-      "title": "Developer Documentation",
-      "description": "Full documentation for building MiniDApps with MDS.",
-      "url": "https://docs.minima.global",
-      "icon": "book"
+      "label": "Community",
+      "items": [
+        { "name": "Telegram", "url": "https://t.me/Minima_Global", "note": "" },
+        { "name": "Discord", "url": "https://discord.gg/minima", "note": "" },
+        { "name": "X / Twitter", "url": "https://x.com/MinimaHQ", "note": "" },
+        { "name": "Reddit", "url": "https://www.reddit.com/r/Minima", "note": "" }
+      ]
     },
     {
-      "title": "MDS API Reference",
-      "description": "Complete MDS JavaScript API reference for MiniDApp developers.",
-      "url": "https://docs.minima.global/docs/development/mds-api",
-      "icon": "api"
+      "label": "Community Nodes",
+      "items": [
+        { "name": "Spartacus Rex", "url": "https://spartacusrex.com", "note": "Community node operator" },
+        { "name": "Eurobuddha", "url": "https://eurobuddha.com", "note": "Community node operator" },
+        { "name": "MinimaMMR", "url": "https://minimammr.com", "note": "MMR node infrastructure" },
+        { "name": "Integritas", "url": "https://integritas.technology", "note": "Infrastructure services" }
+      ]
     },
     {
-      "title": "Terminal Commands",
-      "description": "Full reference for Minima node terminal commands.",
-      "url": "https://docs.minima.global/docs/runanode/terminal_commands",
-      "icon": "terminal"
+      "label": "Security",
+      "items": [
+        { "name": "CertiK Audit", "url": "https://skynet.certik.com/projects/minima", "note": "Independent security audit" }
+      ]
     },
     {
-      "title": "Minima GitHub Org",
-      "description": "Official open source repositories for Minima Global.",
-      "url": "https://github.com/minima-global",
-      "icon": "github"
-    }
-  ],
-  "community": [
-    {
-      "title": "Telegram",
-      "description": "Join the main Minima community channel on Telegram.",
-      "url": "https://t.me/Minima_Global",
-      "icon": "telegram"
-    },
-    {
-      "title": "Discord",
-      "description": "Developer and community discussions on Discord.",
-      "url": "https://discord.gg/minima",
-      "icon": "discord"
-    },
-    {
-      "title": "X / Twitter",
-      "description": "Follow @MinimaHQ for the latest Minima news and announcements.",
-      "url": "https://x.com/MinimaHQ",
-      "icon": "x"
-    },
-    {
-      "title": "Reddit",
-      "description": "Minima subreddit for community discussions.",
-      "url": "https://www.reddit.com/r/Minima",
-      "icon": "reddit"
+      "label": "dApp Stores",
+      "note": "Add these JSON feed URLs in your Minima node under MiniDApp Store > Add Store",
+      "copyable": true,
+      "items": [
+        { "name": "Jazminima SuperStore", "url": "https://jazminima.github.io/dappstore/dapps.json", "note": "Jazminima" },
+        { "name": "KISS Labs Store", "url": "https://eliasnemr.github.io/kisslabsstore/kiss_labs.json", "note": "Elias Nemr" },
+        { "name": "Panda dApps", "url": "https://eurobuddha.com/pandadapps.json", "note": "Eurobuddha" },
+        { "name": "DynamiteSush Store", "url": "https://dynamitesush.vps.webdock.cloud/store/store.json", "note": "DynamiteSush" },
+        { "name": "Monthrie MegaStore", "url": "https://monthrie.github.io/minidapp-store/store.json", "note": "Monthrie" }
+      ]
     }
   ],
   "libraries": [
     {
       "name": "MDS - Minima Development System",
-      "description": "The core JavaScript library for building MiniDApps. Provides a full API to interact with your Minima node, manage tokens, sign transactions, and communicate over Maxima.",
+      "description": "Core JavaScript library for building MiniDApps. Provides a full API to interact with your Minima node, manage tokens, sign transactions, and communicate over Maxima.",
       "language": "JavaScript",
       "url": "https://docs.minima.global/docs/development/developmentoverview",
       "github": "https://github.com/minima-global/MiniDapp-System",
