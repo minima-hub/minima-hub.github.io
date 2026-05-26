@@ -42,7 +42,8 @@
         { "name": "Discord", "url": "https://discord.gg/minimaglobal", "note": "" },
         { "name": "X", "url": "https://x.com/Minima_Global", "note": "" },
         { "name": "YouTube", "url": "https://www.youtube.com/@MinimaGlobal", "note": "" },
-        { "name": "LinkedIn", "url": "https://www.linkedin.com/company/minimaglobal/", "note": "" }
+        { "name": "LinkedIn", "url": "https://www.linkedin.com/company/minimaglobal/", "note": "" },
+        { "name": "GitHub", "url": "https://github.com/minima-global", "note": "" }
       ]
     },
     {
