@@ -68,13 +68,13 @@
   {
     "name": "MXUSD",
     "description": "USD-pegged stablecoin built on the Minima blockchain.",
-    "category": "Finance",
+    "category": "Bridge",
     "url": "https://mxusd.global",
     "github": null,
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["stablecoin", "usd", "token"]
+    "tags": ["stablecoin", "usd", "bridge"]
   },
   {
     "name": "Vestr",
