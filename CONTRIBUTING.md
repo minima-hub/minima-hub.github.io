@@ -91,7 +91,7 @@ Library format:
 - PR title format: `[feat] Add [Name]` or `[update] Fix [Name] URL`
 - All URLs must be live and reachable at the time of submission
 - Descriptions must be factual - no marketing claims or vague language
-- No em-dashes (--) in any content
+- No em-dash character (—) in any content - use a hyphen with spaces instead
 
 ---
 

@@ -2,7 +2,7 @@
 
 Community-curated hub for the Minima blockchain ecosystem - nodes, libraries, and dApps.
 
-**Live site**: [charles0xhorizonxyz.github.io/minima-hub](https://charles0xhorizonxyz.github.io/minima-hub)
+**Live site**: [minima-hub.github.io](https://minima-hub.github.io)
 
 ---
 
