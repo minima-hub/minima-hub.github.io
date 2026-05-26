@@ -1,5 +1,21 @@
 [
   {
+    "name": "AnyPhraseRecovery",
+    "description": "Sweep funds from any webwallet seed phrase into your Minima node without sharing your node's private key.",
+    "category": "Finance",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "recovery",
+      "seed-phrase",
+      "wallet",
+      "sweep"
+    ]
+  },
+  {
     "name": "Axe S3",
     "description": "Prove token ownership to a third party using a QR code and digital signature - no transfer required.",
     "category": "Tools",
@@ -13,6 +29,22 @@
       "proof",
       "tokens",
       "verification"
+    ]
+  },
+  {
+    "name": "BIP39 Seed Generator",
+    "description": "Generate deterministic or random BIP39 mnemonic seed phrases securely on your Minima node.",
+    "category": "Developer",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "bip39",
+      "seed",
+      "mnemonic",
+      "security"
     ]
   },
   {
@@ -44,6 +76,21 @@
       "chat",
       "messaging",
       "decentralized"
+    ]
+  },
+  {
+    "name": "Faucet",
+    "description": "Get free MINIMA tokens to get started on the network - community faucet run by Eurobuddha.",
+    "category": "Finance",
+    "url": "https://eurobuddha.com/faucet/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "faucet",
+      "tokens",
+      "onboarding"
     ]
   },
   {
@@ -93,6 +140,21 @@
     ]
   },
   {
+    "name": "History",
+    "description": "Browse the full history of your transactions and blocks on the Minima network.",
+    "category": "Infrastructure",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "history",
+      "transactions",
+      "blocks"
+    ]
+  },
+  {
     "name": "Integritas",
     "description": "Technology and infrastructure services for the Minima ecosystem.",
     "category": "Infrastructure",
@@ -105,6 +167,38 @@
       "infrastructure",
       "services",
       "technology"
+    ]
+  },
+  {
+    "name": "Limit",
+    "description": "On-chain limit order DEX for MINIMA/USDT - trustless fills via VERIFYOUT smart contract.",
+    "category": "Finance",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "dex",
+      "limit-orders",
+      "usdt",
+      "on-chain"
+    ]
+  },
+  {
+    "name": "Linternet Plaza",
+    "description": "Dynamic catalogue of all sites on the PocketWeb decentralised web - browse the Linternet.",
+    "category": "Tools",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "directory",
+      "linternet",
+      "pocketweb",
+      "decentralized"
     ]
   },
   {
@@ -156,17 +250,18 @@
   },
   {
     "name": "Maximize",
-    "description": "Full Maxima management - configure and monitor your Maxima communication channels.",
-    "category": "Tools",
-    "url": "https://minima.global",
+    "description": "Minima yield and staking rewards maximizer - earn from your node participation.",
+    "category": "Finance",
+    "url": "https://eurobuddha.com/",
     "github": null,
     "status": "active",
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "maxima",
-      "management",
-      "p2p"
+      "yield",
+      "staking",
+      "rewards",
+      "node"
     ]
   },
   {
@@ -184,6 +279,23 @@
       "maxima",
       "private",
       "official"
+    ]
+  },
+  {
+    "name": "minArmyKnife",
+    "description": "Node hygiene toolkit - tracking audit, stuck transactions, coin manager, token dust, and balance health checks.",
+    "category": "Tools",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "node",
+      "tools",
+      "hygiene",
+      "coins",
+      "management"
     ]
   },
   {
@@ -367,11 +479,27 @@
     ]
   },
   {
+    "name": "PocketFS",
+    "description": "Decentralised file system MiniDapp - store and share files on the Minima network.",
+    "category": "Tools",
+    "url": "https://eurobuddha.com/",
+    "github": "https://github.com/eurobuddha/PocketWeb",
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "filesystem",
+      "files",
+      "decentralized",
+      "storage"
+    ]
+  },
+  {
     "name": "PocketWeb",
     "description": "Browse and host web content on the Minima network.",
     "category": "Tools",
     "url": "https://pocketweb.uk",
-    "github": null,
+    "github": "https://github.com/eurobuddha/PocketWeb",
     "status": "active",
     "official": false,
     "added": "2026-05-26",
@@ -415,6 +543,22 @@
       "vault"
     ],
     "x": "https://x.com/0xNemr"
+  },
+  {
+    "name": "Seed Gen",
+    "description": "Securely generate a new 24-word mnemonic seed phrase for Minima wallet recovery.",
+    "category": "Developer",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "seed",
+      "mnemonic",
+      "security",
+      "wallet"
+    ]
   },
   {
     "name": "Shout Out",
@@ -501,6 +645,22 @@
     "discord": "https://discord.gg/rTdqwRGPXR"
   },
   {
+    "name": "staticMLS",
+    "description": "Set up a permanent Maxima address using a hosted static MLS endpoint.",
+    "category": "Tools",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "maxima",
+      "mls",
+      "address",
+      "p2p"
+    ]
+  },
+  {
     "name": "Terminal",
     "description": "Command-line interface for interacting directly with your Minima node from the browser.",
     "category": "Developer",
@@ -565,6 +725,22 @@
       "create"
     ],
     "x": "https://x.com/0xNemr"
+  },
+  {
+    "name": "utxoWallet",
+    "description": "Explicit UTXO-selection wallet - pick exactly which coins you spend. Send, split, distribute, consolidate and QR receive with full coin and token detail.",
+    "category": "Finance",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "wallet",
+      "utxo",
+      "coins",
+      "advanced"
+    ]
   },
   {
     "name": "V",
@@ -655,6 +831,22 @@
     "tags": [
       "social",
       "community"
+    ]
+  },
+  {
+    "name": "Zero Edge Casino",
+    "description": "Provably fair on-chain casino with coin flip, dice, and roulette - 3-phase commit-reveal smart contract.",
+    "category": "Gaming",
+    "url": "https://eurobuddha.com/",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": [
+      "casino",
+      "provably-fair",
+      "on-chain",
+      "gaming"
     ]
   }
 ]

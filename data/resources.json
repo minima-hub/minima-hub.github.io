@@ -59,8 +59,7 @@
         { "name": "KISS Labs Store", "url": "https://eliasnemr.github.io/kisslabsstore/", "note": "Elias Nemr" },
         { "name": "Panda dApps", "url": "https://eurobuddha.com/pandadapps.json", "note": "Eurobuddha" },
         { "name": "DynamiteSush Store", "url": "https://dynamitesush.vps.webdock.cloud/store/store.json", "note": "DynamiteSush" },
-        { "name": "Monthrie MegaStore", "url": "https://monthrie.github.io/minidapp-store/", "note": "Monthrie" },
-        { "name": "VITAs Store", "url": "https://vita-agent.ai/dapp-store/", "note": "VITA" }
+        { "name": "Monthrie MegaStore", "url": "https://monthrie.github.io/minidapp-store/", "note": "Monthrie" }
       ]
     }
   ],
