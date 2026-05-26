@@ -67,32 +67,22 @@
   "libraries": [
     {
       "name": "MDS - Minima Development System",
-      "description": "Core JavaScript library for building MiniDApps. Provides a full API to interact with your Minima node, manage tokens, sign transactions, and communicate over Maxima.",
+      "description": "Core JavaScript library for building MiniDApps. Provides a full API to interact with your Minima full node, manage tokens, sign transactions, and communicate over Maxima.",
       "language": "JavaScript",
-      "url": "https://docs.minima.global/docs/development/developmentoverview",
-      "github": "https://github.com/minima-global/MiniDapp-System",
+      "url": "https://docs.minima.global/docs/development",
+      "github": "https://github.com/minima-global/MiniDAPP",
       "npm": null,
       "status": "active",
       "official": true
     },
     {
       "name": "minima.js",
-      "description": "Lightweight JavaScript client library for connecting to and interacting with a Minima node from web applications.",
+      "description": "JavaScript interface library for writing MiniDApps that run directly on the Minima full blockchain node.",
       "language": "JavaScript",
-      "url": "https://docs.minima.global",
+      "url": "https://github.com/minima-global/minima.js",
       "github": "https://github.com/minima-global/minima.js",
       "npm": null,
-      "status": "active",
-      "official": true
-    },
-    {
-      "name": "minima4j",
-      "description": "Java client library for building server-side integrations with the Minima node RPC API.",
-      "language": "Java",
-      "url": "https://github.com/minima-global/minima4j",
-      "github": "https://github.com/minima-global/minima4j",
-      "npm": null,
-      "status": "active",
+      "status": "archived",
       "official": true
     }
   ]

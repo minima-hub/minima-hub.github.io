@@ -16,22 +16,6 @@
     ]
   },
   {
-    "name": "Block",
-    "description": "Browse blocks, transactions, coins, and addresses on the Minima blockchain.",
-    "category": "Infrastructure",
-    "url": "https://explorer.minima.global",
-    "github": null,
-    "status": "active",
-    "official": true,
-    "added": "2026-05-26",
-    "tags": [
-      "explorer",
-      "blocks",
-      "transactions",
-      "official"
-    ]
-  },
-  {
     "name": "ChainMail",
     "description": "On-chain encrypted messaging - every Minima user has a ChainMail address. Messages are signed, end-to-end encrypted, and cost 0.001 MINIMA.",
     "category": "Communication",
