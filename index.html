@@ -208,6 +208,14 @@
       flex-wrap: wrap;
     }
 
+    .cat-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
     .cat-tabs {
       display: flex;
       gap: 5px;
@@ -361,7 +369,6 @@
       display: flex;
       align-items: center;
       gap: 9px;
-      margin-bottom: 10px;
     }
 
     .legacy-toggle-label {
@@ -610,20 +617,22 @@
           <input type="text" id="search-input" placeholder="Search..." aria-label="Search dApps" />
         </div>
       </div>
-      <div class="cat-tabs" id="cat-tabs">
-        <button class="cat-tab active" data-cat="all">All</button>
-        <button class="cat-tab" data-cat="Finance">Finance</button>
-        <button class="cat-tab" data-cat="Tools">Tools</button>
-        <button class="cat-tab" data-cat="Communication">Communication</button>
-        <button class="cat-tab" data-cat="Infrastructure">Infrastructure</button>
-        <button class="cat-tab" data-cat="Developer">Developer</button>
-        <button class="cat-tab" data-cat="Bridge">Bridge</button>
-        <button class="cat-tab" data-cat="NFT">NFT</button>
-        <button class="cat-tab" data-cat="Gaming">Gaming</button>
-      </div>
-      <div class="legacy-toggle-wrap">
-        <button id="legacy-toggle" class="legacy-toggle" aria-label="Show legacy dApps"></button>
-        <span class="legacy-toggle-label" id="legacy-toggle-label">Show legacy</span>
+      <div class="cat-row">
+        <div class="cat-tabs" id="cat-tabs">
+          <button class="cat-tab active" data-cat="all">All</button>
+          <button class="cat-tab" data-cat="Finance">Finance</button>
+          <button class="cat-tab" data-cat="Tools">Tools</button>
+          <button class="cat-tab" data-cat="Communication">Communication</button>
+          <button class="cat-tab" data-cat="Infrastructure">Infrastructure</button>
+          <button class="cat-tab" data-cat="Developer">Developer</button>
+          <button class="cat-tab" data-cat="Bridge">Bridge</button>
+          <button class="cat-tab" data-cat="NFT">NFT</button>
+          <button class="cat-tab" data-cat="Gaming">Gaming</button>
+        </div>
+        <div class="legacy-toggle-wrap">
+          <button id="legacy-toggle" class="legacy-toggle" aria-label="Show legacy dApps"></button>
+          <span class="legacy-toggle-label" id="legacy-toggle-label">Show legacy</span>
+        </div>
       </div>
       <div class="dapps-count" id="dapps-count"></div>
       <div id="dapps-grid" class="dapps-grid">
