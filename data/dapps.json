@@ -217,10 +217,10 @@
     ]
   },
   {
-    "name": "MinimASK DEX",
+    "name": "MinimASK",
     "description": "Community-built decentralized exchange accessible directly from the browser.",
     "category": "Finance",
-    "url": "https://minimask.org/dex/public/",
+    "url": "https://minimask.org/",
     "github": "https://github.com/minima-global/minimask",
     "status": "active",
     "official": false,
