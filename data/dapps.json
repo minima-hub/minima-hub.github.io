@@ -467,7 +467,7 @@
     "category": "Finance",
     "url": "https://github.com/Charles0xhorizonxyz/the-minima-pool",
     "github": "https://github.com/Charles0xhorizonxyz/the-minima-pool",
-    "status": "experimental",
+    "status": "beta",
     "official": false,
     "added": "2026-05-26",
     "tags": ["amm", "liquidity", "pool", "defi", "minima-usdt"]
