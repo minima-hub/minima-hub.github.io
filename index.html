@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minima Hub - The Minima Ecosystem Directory</title>
+  <meta name="description" content="Community-curated hub for Minima nodes, libraries, dApps, and developer resources. The go-to reference for the Minima ecosystem." />
+  <meta property="og:title" content="Minima Hub" />
+  <meta property="og:description" content="Community-curated hub for Minima nodes, libraries, and dApps." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Minima Hub" />
+  <meta name="twitter:description" content="Community-curated hub for Minima nodes, libraries, and dApps." />
+  <style>
+    :root {
+      --bg: #070d09;
+      --surface: #0d1a10;
+      --surface2: #111f14;
+      --text: #e8f5ee;
+      --muted: rgba(232, 245, 238, 0.62);
+      --line: rgba(26, 232, 123, 0.13);
+      --accent: #1ae87b;
+      --accent-dark: #12a857;
+      --accent-soft: rgba(26, 232, 123, 0.10);
+      --accent-border: rgba(26, 232, 123, 0.22);
+      --max: 1100px;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    /* ---- HEADER ---- */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 13, 9, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 24px;
+    }
+
+    .site-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+    }
+
+    .site-name .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      font-size: 0.92rem;
+      color: var(--muted);
+      transition: color 0.18s;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: var(--text); }
+
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: background 0.18s, border-color 0.18s;
+      white-space: nowrap;
+    }
+
+    .btn-submit:hover {
+      background: rgba(26, 232, 123, 0.18);
+      border-color: rgba(26, 232, 123, 0.4);
+    }
+
+    /* ---- HERO ---- */
+
+    .hero {
+      padding: 80px 0 72px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(26, 232, 123, 0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-border);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .hero-badge .pulse {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 6vw, 5.2rem);
+      line-height: 1.0;
+      letter-spacing: -0.045em;
+      color: var(--text);
+      max-width: 14ch;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span { color: var(--accent); }
+
+    .hero-lead {
+      font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+      color: var(--muted);
+      max-width: 54ch;
+      line-height: 1.72;
+      margin-bottom: 40px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .stat-num {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      padding: 13px 28px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #050e07;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      transition: background 0.18s, transform 0.15s;
+    }
+
+    .btn-primary:hover { background: #22f589; transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-border);
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: border-color 0.18s, background 0.18s;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(26, 232, 123, 0.45);
+      background: var(--accent-soft);
+    }
+
+    /* ---- SECTIONS ---- */
+
+    section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-of-type { border-bottom: none; }
+
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 14px;
+      line-height: 1.1;
+    }
+
+    .section-desc {
+      font-size: clamp(1rem, 1.3vw, 1.15rem);
+      color: var(--muted);
+      max-width: 58ch;
+      margin-bottom: 40px;
+      line-height: 1.72;
+    }
+
+    /* ---- ABOUT MINIMA ---- */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .about-text p:last-child { margin-bottom: 0; }
+
+    .about-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .about-link-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      transition: border-color 0.18s, background 0.18s;
+    }
+
+    .about-link-card:hover {
+      border-color: var(--accent-border);
+      background: var(--surface2);
+    }
+
+    .about-link-card .link-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .about-link-card .link-url {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .about-link-card .arrow {
+      color: var(--muted);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* ---- RESOURCE TABS ---- */
+
+    .resource-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .rtab {
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.18s;
+      font-family: inherit;
+    }
+
+    .rtab:hover { border-color: var(--accent-border); color: var(--text); }
+
+    .rtab.active {
+      background: var(--accent-soft);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .resource-panel { display: none; }
+    .resource-panel.active { display: block; }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .resource-card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      transition: border-color 0.18s, background 0.18s, transform 0.15s;
+    }
+
+    .resource-card:hover {
+      border-color: var(--accent-border);
+      background: var(--surface2);
+      transform: translateY(-2px);
+    }
+
+    .resource-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .resource-icon svg { width: 18px; height: 18px; }
+
+    .resource-card-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .resource-card-desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .resource-card-link {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    /* ---- dAPPS DIRECTORY ---- */
+
+    .dapps-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cat-tabs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .cat-tab {
+      padding: 7px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.18s;
+      font-family: inherit;
+    }
+
+    .cat-tab:hover { border-color: var(--accent-border); color: var(--text); }
+
+    .cat-tab.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #050e07;
+      font-weight: 700;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      transition: border-color 0.18s;
+    }
+
+    .search-box:focus-within { border-color: var(--accent-border); }
+
+    .search-box svg {
+      width: 16px;
+      height: 16px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .search-box input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text);
+      font-size: 0.88rem;
+      font-family: inherit;
+      min-width: 180px;
+    }
+
+    .search-box input::placeholder { color: var(--muted); }
+
+    .dapps-count {
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .dapps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .dapp-card {
+      display: flex;
+      flex-direction: column;
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      transition: border-color 0.18s, background 0.18s, transform 0.15s;
+      position: relative;
+    }
+
+    .dapp-card:hover {
+      border-color: var(--accent-border);
+      background: var(--surface2);
+      transform: translateY(-2px);
+    }
+
+    .dapp-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .dapp-name {
+      font-size: 1.0rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .dapp-badges {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .badge-official {
+      background: rgba(26, 232, 123, 0.12);
+      border: 1px solid rgba(26, 232, 123, 0.28);
+      color: var(--accent);
+    }
+
+    .badge-beta {
+      background: rgba(255, 195, 50, 0.12);
+      border: 1px solid rgba(255, 195, 50, 0.28);
+      color: #ffc332;
+    }
+
+    .badge-experimental {
+      background: rgba(160, 130, 255, 0.12);
+      border: 1px solid rgba(160, 130, 255, 0.28);
+      color: #a082ff;
+    }
+
+    .badge-archived {
+      background: rgba(180, 180, 180, 0.12);
+      border: 1px solid rgba(180, 180, 180, 0.28);
+      color: #999;
+    }
+
+    .dapp-category {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .dapp-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.65;
+      flex: 1;
+      margin-bottom: 18px;
+    }
+
+    .dapp-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--muted);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .dapp-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .dapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--text);
+      transition: all 0.18s;
+    }
+
+    .dapp-link:hover {
+      border-color: var(--accent-border);
+      color: var(--accent);
+    }
+
+    .dapp-link.primary {
+      background: var(--accent-soft);
+      border-color: var(--accent-border);
+      color: var(--accent);
+    }
+
+    .dapp-link.primary:hover { background: rgba(26, 232, 123, 0.18); }
+
+    .dapp-link svg { width: 13px; height: 13px; }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+    }
+
+    .empty-state p { margin-top: 8px; font-size: 0.9rem; }
+
+    /* ---- LIBRARIES ---- */
+
+    .lib-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .lib-card {
+      padding: 24px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      transition: border-color 0.18s, background 0.18s, transform 0.15s;
+    }
+
+    .lib-card:hover {
+      border-color: var(--accent-border);
+      background: var(--surface2);
+      transform: translateY(-2px);
+    }
+
+    .lib-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .lib-name {
+      font-weight: 700;
+      font-size: 1.0rem;
+      color: var(--text);
+    }
+
+    .lib-lang {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+    }
+
+    .lib-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .lib-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .lib-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      transition: all 0.18s;
+    }
+
+    .lib-link:hover { border-color: var(--accent-border); color: var(--accent); }
+    .lib-link svg { width: 13px; height: 13px; }
+
+    /* ---- CONTRIBUTE CTA ---- */
+
+    .contribute-block {
+      padding: 48px;
+      border-radius: 14px;
+      border: 1px solid var(--accent-border);
+      background: linear-gradient(135deg, rgba(26, 232, 123, 0.06) 0%, rgba(7, 13, 9, 0) 60%);
+      text-align: center;
+    }
+
+    .contribute-block h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .contribute-block p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 54ch;
+      margin: 0 auto 28px;
+      line-height: 1.72;
+    }
+
+    .contribute-ctas {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ---- FOOTER ---- */
+
+    footer {
+      padding: 36px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .footer-brand {
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-brand .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .footer-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .footer-links a {
+      font-size: 0.82rem;
+      color: var(--muted);
+      transition: color 0.18s;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    /* ---- LOADING ---- */
+
+    .loading-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .spinner {
+      width: 28px;
+      height: 28px;
+      border: 2px solid var(--line);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ---- RESPONSIVE ---- */
+
+    @media (max-width: 860px) {
+      .hero { padding: 56px 0 52px; }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .dapps-controls {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contribute-block {
+        padding: 32px 24px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .dapps-grid { grid-template-columns: 1fr; }
+      .lib-grid { grid-template-columns: 1fr; }
+      .resource-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="wrap nav-inner">
+      <a href="#" class="site-name">
+        <span class="dot"></span>
+        Minima Hub
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#resources">Resources</a>
+        <a href="#dapps">dApps</a>
+        <a href="#libraries">Libraries</a>
+      </nav>
+      <a href="https://github.com/Charles0xhorizonxyz/minima-hub/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="btn-submit">
+        + Submit dApp
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Community curated
+      </div>
+      <h1>Everything <span>Minima</span>.<br>In one place.</h1>
+      <p class="hero-lead">
+        The community-curated hub for Minima nodes, developer libraries, and dApps.
+        Find what you need, or add what is missing.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" id="stat-dapps">--</span>
+          <span class="stat-label">dApps listed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="stat-libs">--</span>
+          <span class="stat-label">Libraries</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="stat-resources">--</span>
+          <span class="stat-label">Resources</span>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#dapps" class="btn-primary">Explore dApps</a>
+        <a href="https://github.com/Charles0xhorizonxyz/minima-hub" target="_blank" rel="noopener" class="btn-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+          Contribute on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT MINIMA -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-label">What is Minima</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Minima is a lightweight blockchain designed to run a complete node on any device - mobile, IoT, desktop, or server. Every participant runs a full node, making the network truly decentralized with no single point of failure.
+          </p>
+          <p>
+            Built on the principle that a blockchain is only secure if anyone can validate it, Minima keeps the protocol small enough to run on a Raspberry Pi or Android phone while maintaining full network integrity.
+          </p>
+          <p>
+            dApps on Minima are called MiniDApps. They run inside the node's browser interface and use MDS (Minima Development System) to interact with the blockchain directly.
+          </p>
+        </div>
+        <div class="about-links">
+          <a href="https://minima.global" target="_blank" rel="noopener" class="about-link-card">
+            <div>
+              <div class="link-title">minima.global</div>
+              <div class="link-url">Official website</div>
+            </div>
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a href="https://docs.minima.global" target="_blank" rel="noopener" class="about-link-card">
+            <div>
+              <div class="link-title">docs.minima.global</div>
+              <div class="link-url">Developer documentation</div>
+            </div>
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a href="https://github.com/minima-global" target="_blank" rel="noopener" class="about-link-card">
+            <div>
+              <div class="link-title">github.com/minima-global</div>
+              <div class="link-url">Open source repositories</div>
+            </div>
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a href="https://explorer.minima.global" target="_blank" rel="noopener" class="about-link-card">
+            <div>
+              <div class="link-title">explorer.minima.global</div>
+              <div class="link-url">Block explorer</div>
+            </div>
+            <span class="arrow">&#8599;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources">
+    <div class="wrap">
+      <div class="section-label">Resources</div>
+      <h2 class="section-title">Everything you need to get started</h2>
+      <p class="section-desc">Node setup guides, documentation, and community links - all in one place.</p>
+
+      <div class="resource-tabs">
+        <button class="rtab active" data-panel="node">Run a Node</button>
+        <button class="rtab" data-panel="docs">Documentation</button>
+        <button class="rtab" data-panel="community">Community</button>
+      </div>
+
+      <div id="panel-node" class="resource-panel active">
+        <div id="node-grid" class="resource-grid">
+          <div class="loading-state"><div class="spinner"></div></div>
+        </div>
+      </div>
+      <div id="panel-docs" class="resource-panel">
+        <div id="docs-grid" class="resource-grid"></div>
+      </div>
+      <div id="panel-community" class="resource-panel">
+        <div id="community-grid" class="resource-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- dAPPS DIRECTORY -->
+  <section id="dapps">
+    <div class="wrap">
+      <div class="section-label">dApps Directory</div>
+      <h2 class="section-title">MiniDApps built on Minima</h2>
+      <p class="section-desc">Community-curated list of dApps running on the Minima network. Missing one? Submit a PR on GitHub.</p>
+
+      <div class="dapps-controls">
+        <div class="cat-tabs" id="cat-tabs">
+          <button class="cat-tab active" data-cat="all">All</button>
+          <button class="cat-tab" data-cat="Finance">Finance</button>
+          <button class="cat-tab" data-cat="Tools">Tools</button>
+          <button class="cat-tab" data-cat="Communication">Communication</button>
+          <button class="cat-tab" data-cat="Infrastructure">Infrastructure</button>
+          <button class="cat-tab" data-cat="Developer">Developer</button>
+          <button class="cat-tab" data-cat="NFT">NFT</button>
+          <button class="cat-tab" data-cat="Gaming">Gaming</button>
+        </div>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input type="text" id="search-input" placeholder="Search dApps..." aria-label="Search dApps" />
+        </div>
+      </div>
+
+      <div class="dapps-count" id="dapps-count"></div>
+      <div id="dapps-grid" class="dapps-grid">
+        <div class="loading-state"><div class="spinner"></div><span>Loading dApps...</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIBRARIES -->
+  <section id="libraries">
+    <div class="wrap">
+      <div class="section-label">Libraries and SDKs</div>
+      <h2 class="section-title">Build on Minima</h2>
+      <p class="section-desc">Official and community libraries for integrating Minima into your project.</p>
+      <div id="lib-grid" class="lib-grid">
+        <div class="loading-state"><div class="spinner"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTE -->
+  <section>
+    <div class="wrap">
+      <div class="contribute-block">
+        <h2>Add your dApp or resource</h2>
+        <p>
+          Minima Hub is open source and community-maintained. If you have built a dApp, library, or useful resource,
+          add it by submitting a Pull Request on GitHub. No HTML required - just edit a JSON file.
+        </p>
+        <div class="contribute-ctas">
+          <a href="https://github.com/Charles0xhorizonxyz/minima-hub/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="btn-primary">
+            Read the guide
+          </a>
+          <a href="https://github.com/Charles0xhorizonxyz/minima-hub/issues/new" target="_blank" rel="noopener" class="btn-secondary">
+            Open an issue
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="dot"></span>
+          Minima Hub
+        </div>
+        <div class="footer-note">Open source - community maintained. Not affiliated with Minima Global.</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Charles0xhorizonxyz/minima-hub" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Charles0xhorizonxyz/minima-hub/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute</a>
+        <a href="https://minima.global" target="_blank" rel="noopener">minima.global</a>
+        <a href="https://0xhorizon.xyz" target="_blank" rel="noopener">0xHorizon</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // State
+    let allDapps = [];
+    let allResources = {};
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    // SVG icons keyed by name
+    const icons = {
+      download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+      docker: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 0 0 .186-.186V3.574a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 0 0 .186-.186V6.29a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 0 0 .184-.186V6.29a.185.185 0 0 0-.185-.185H8.1a.185.185 0 0 0-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 0 0 .185-.186V6.29a.185.185 0 0 0-.185-.185H5.136a.186.186 0 0 0-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.186.186 0 0 0-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 0 0-.75.748 11.376 11.376 0 0 0 .692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 0 0 3.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg>',
+      chip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M20 9h2M2 15h2M20 15h2"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg>',
+      server: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>',
+      book: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
+      api: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>',
+      terminal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>',
+      github: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>',
+      telegram: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.328-.373-.115l-6.869 4.332-2.97-.924c-.643-.204-.657-.643.136-.953l11.6-4.47c.537-.194 1.006.128.832.941z"/></svg>',
+      discord: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg>',
+      x: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.77 7.74L23 22h-6.1l-4.78-6.26L6.64 22H3.53l7.24-8.28L1 2h6.25l4.32 5.7L18.9 2Zm-1.07 18h1.69L6.33 3.9H4.5L17.83 20Z"/></svg>',
+      reddit: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>',
+      link: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>'
+    };
+
+    // Render a resource card
+    function resourceCardHTML(item) {
+      const icon = icons[item.icon] || icons.link;
+      return `
+        <a href="${item.url}" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-icon">${icon}</div>
+          <div class="resource-card-title">${item.title}</div>
+          <div class="resource-card-desc">${item.description}</div>
+          <div class="resource-card-link">Visit &rarr;</div>
+        </a>`;
+    }
+
+    // Render resources into grids
+    function renderResources(data) {
+      const nodeGrid = document.getElementById('node-grid');
+      const docsGrid = document.getElementById('docs-grid');
+      const commGrid = document.getElementById('community-grid');
+
+      if (data.node) nodeGrid.innerHTML = data.node.map(resourceCardHTML).join('');
+      if (data.docs) docsGrid.innerHTML = data.docs.map(resourceCardHTML).join('');
+      if (data.community) commGrid.innerHTML = data.community.map(resourceCardHTML).join('');
+
+      // Count for hero stats (node + docs + community)
+      const total = (data.node || []).length + (data.docs || []).length + (data.community || []).length;
+      document.getElementById('stat-resources').textContent = total;
+    }
+
+    // Render libraries
+    function renderLibraries(libs) {
+      const grid = document.getElementById('lib-grid');
+      if (!libs || !libs.length) {
+        grid.innerHTML = '<div class="empty-state">No libraries listed yet.</div>';
+        return;
+      }
+      document.getElementById('stat-libs').textContent = libs.length;
+      grid.innerHTML = libs.map(lib => `
+        <div class="lib-card">
+          <div class="lib-card-top">
+            <div class="lib-name">${lib.name}</div>
+            <span class="lib-lang">${lib.language}</span>
+          </div>
+          <div class="lib-desc">${lib.description}</div>
+          <div class="lib-links">
+            ${lib.url ? `<a href="${lib.url}" target="_blank" rel="noopener" class="lib-link">${icons.link} Docs</a>` : ''}
+            ${lib.github ? `<a href="${lib.github}" target="_blank" rel="noopener" class="lib-link">${icons.github} GitHub</a>` : ''}
+            ${lib.npm ? `<a href="https://npmjs.com/package/${lib.npm}" target="_blank" rel="noopener" class="lib-link">npm</a>` : ''}
+          </div>
+        </div>`).join('');
+    }
+
+    // Status badge HTML
+    function statusBadge(status) {
+      if (status === 'active') return '';
+      const cls = { beta: 'badge-beta', experimental: 'badge-experimental', archived: 'badge-archived' }[status] || '';
+      return `<span class="badge ${cls}">${status}</span>`;
+    }
+
+    // Render dApp cards
+    function renderDapps(list) {
+      const grid = document.getElementById('dapps-grid');
+      const count = document.getElementById('dapps-count');
+
+      if (!list.length) {
+        grid.innerHTML = `<div class="empty-state"><div style="font-size:2rem">&#128269;</div><p>No dApps match your filter. Try a different category or search term.</p></div>`;
+        count.textContent = '0 dApps';
+        return;
+      }
+
+      count.textContent = `${list.length} dApp${list.length === 1 ? '' : 's'}`;
+      grid.innerHTML = list.map(d => `
+        <div class="dapp-card">
+          <div class="dapp-card-top">
+            <div class="dapp-name">${d.name}</div>
+            <div class="dapp-badges">
+              ${d.official ? '<span class="badge badge-official">Official</span>' : ''}
+              ${statusBadge(d.status)}
+            </div>
+          </div>
+          <div class="dapp-category">${d.category}</div>
+          <div class="dapp-desc">${d.description}</div>
+          ${d.tags && d.tags.length ? `<div class="dapp-tags">${d.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>` : ''}
+          <div class="dapp-links">
+            ${d.url ? `<a href="${d.url}" target="_blank" rel="noopener" class="dapp-link primary">${icons.link} Open</a>` : ''}
+            ${d.github ? `<a href="${d.github}" target="_blank" rel="noopener" class="dapp-link">${icons.github} GitHub</a>` : ''}
+          </div>
+        </div>`).join('');
+    }
+
+    // Filter and search logic
+    function filterDapps() {
+      const filtered = allDapps.filter(d => {
+        const catMatch = currentCategory === 'all' || d.category === currentCategory;
+        const q = searchQuery.toLowerCase();
+        const searchMatch = !q ||
+          d.name.toLowerCase().includes(q) ||
+          d.description.toLowerCase().includes(q) ||
+          (d.tags && d.tags.some(t => t.toLowerCase().includes(q)));
+        return catMatch && searchMatch;
+      });
+      renderDapps(filtered);
+    }
+
+    // Load all data
+    async function loadData() {
+      try {
+        const [dappsRes, resourcesRes] = await Promise.all([
+          fetch('data/dapps.json'),
+          fetch('data/resources.json')
+        ]);
+
+        allDapps = await dappsRes.json();
+        allResources = await resourcesRes.json();
+
+        document.getElementById('stat-dapps').textContent = allDapps.length;
+
+        renderDapps(allDapps);
+        renderResources(allResources);
+        renderLibraries(allResources.libraries || []);
+
+      } catch (err) {
+        document.getElementById('dapps-grid').innerHTML =
+          '<div class="empty-state"><p>Could not load dApp data. Open this page via a local server or GitHub Pages.</p></div>';
+        document.getElementById('node-grid').innerHTML =
+          '<div class="empty-state"><p>Could not load resource data.</p></div>';
+        document.getElementById('lib-grid').innerHTML =
+          '<div class="empty-state"><p>Could not load library data.</p></div>';
+      }
+    }
+
+    // Category tabs
+    document.getElementById('cat-tabs').addEventListener('click', e => {
+      const tab = e.target.closest('.cat-tab');
+      if (!tab) return;
+      document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentCategory = tab.dataset.cat;
+      filterDapps();
+    });
+
+    // Search
+    document.getElementById('search-input').addEventListener('input', e => {
+      searchQuery = e.target.value.trim();
+      filterDapps();
+    });
+
+    // Resource tabs
+    document.querySelectorAll('.rtab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.rtab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.resource-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(`panel-${tab.dataset.panel}`).classList.add('active');
+      });
+    });
+
+    // Init
+    loadData();
+  </script>
+
+</body>
+</html>

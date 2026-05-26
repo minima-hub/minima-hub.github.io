@@ -1,0 +1,112 @@
+{
+  "node": [
+    {
+      "title": "Official Node Download",
+      "description": "Run a Minima node on desktop, Android, or server. Official download from minima.global.",
+      "url": "https://minima.global/get-minima",
+      "icon": "download"
+    },
+    {
+      "title": "Docker Image",
+      "description": "Run a Minima node in a Docker container. Best for server and headless deployments.",
+      "url": "https://hub.docker.com/r/minimaglobal/minima",
+      "icon": "docker"
+    },
+    {
+      "title": "Raspberry Pi Setup",
+      "description": "Run a full Minima node on a Raspberry Pi. Step-by-step guide in the official docs.",
+      "url": "https://docs.minima.global/docs/runanode/rpi-arm64",
+      "icon": "chip"
+    },
+    {
+      "title": "VPS / Linux Setup",
+      "description": "Deploy a Minima node on any Linux VPS or cloud server.",
+      "url": "https://docs.minima.global/docs/runanode/linux_vps",
+      "icon": "server"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Developer Documentation",
+      "description": "Full documentation for building MiniDApps with MDS.",
+      "url": "https://docs.minima.global",
+      "icon": "book"
+    },
+    {
+      "title": "MDS API Reference",
+      "description": "Complete MDS JavaScript API reference for MiniDApp developers.",
+      "url": "https://docs.minima.global/docs/development/mds-api",
+      "icon": "api"
+    },
+    {
+      "title": "Terminal Commands",
+      "description": "Full reference for Minima node terminal commands.",
+      "url": "https://docs.minima.global/docs/runanode/terminal_commands",
+      "icon": "terminal"
+    },
+    {
+      "title": "Minima GitHub Org",
+      "description": "Official open source repositories for Minima Global.",
+      "url": "https://github.com/minima-global",
+      "icon": "github"
+    }
+  ],
+  "community": [
+    {
+      "title": "Telegram",
+      "description": "Join the main Minima community channel on Telegram.",
+      "url": "https://t.me/Minima_Global",
+      "icon": "telegram"
+    },
+    {
+      "title": "Discord",
+      "description": "Developer and community discussions on Discord.",
+      "url": "https://discord.gg/minima",
+      "icon": "discord"
+    },
+    {
+      "title": "X / Twitter",
+      "description": "Follow @MinimaHQ for the latest Minima news and announcements.",
+      "url": "https://x.com/MinimaHQ",
+      "icon": "x"
+    },
+    {
+      "title": "Reddit",
+      "description": "Minima subreddit for community discussions.",
+      "url": "https://www.reddit.com/r/Minima",
+      "icon": "reddit"
+    }
+  ],
+  "libraries": [
+    {
+      "name": "MDS - Minima Development System",
+      "description": "The core JavaScript library for building MiniDApps. Provides a full API to interact with your Minima node, manage tokens, sign transactions, and communicate over Maxima.",
+      "language": "JavaScript",
+      "url": "https://docs.minima.global/docs/development/developmentoverview",
+      "github": "https://github.com/minima-global/MiniDapp-System",
+      "npm": null,
+      "status": "active",
+      "official": true
+    },
+    {
+      "name": "minima.js",
+      "description": "Lightweight JavaScript client library for connecting to and interacting with a Minima node from web applications.",
+      "language": "JavaScript",
+      "url": "https://docs.minima.global",
+      "github": "https://github.com/minima-global/minima.js",
+      "npm": null,
+      "status": "active",
+      "official": true
+    },
+    {
+      "name": "minima4j",
+      "description": "Java client library for building server-side integrations with the Minima node RPC API.",
+      "language": "Java",
+      "url": "https://github.com/minima-global/minima4j",
+      "github": "https://github.com/minima-global/minima4j",
+      "npm": null,
+      "status": "active",
+      "official": true
+    }
+  ]
+}

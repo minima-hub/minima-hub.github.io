@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Minima Wallet",
+    "description": "Official Minima wallet for sending, receiving, and managing MINIMA tokens and custom tokens.",
+    "category": "Finance",
+    "url": "https://minima.global/get-minima",
+    "github": "https://github.com/minima-global/Wallet",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": ["wallet", "tokens", "official"]
+  },
+  {
+    "name": "MiniDEX",
+    "description": "Decentralized exchange for swapping custom tokens directly on the Minima blockchain.",
+    "category": "Finance",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/MiniDEX",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": ["dex", "swap", "tokens", "defi", "official"]
+  },
+  {
+    "name": "Terminal",
+    "description": "Command-line interface for interacting directly with your Minima node via browser.",
+    "category": "Developer",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/MiniDApp-Terminal",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": ["cli", "terminal", "developer", "node", "official"]
+  },
+  {
+    "name": "Block Explorer",
+    "description": "Browse blocks, transactions, coins, and addresses on the Minima blockchain.",
+    "category": "Infrastructure",
+    "url": "https://explorer.minima.global",
+    "github": null,
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": ["explorer", "blocks", "transactions", "official"]
+  },
+  {
+    "name": "MaxSolo",
+    "description": "Peer-to-peer private messaging and file sharing powered by the Maxima communication layer.",
+    "category": "Communication",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/MaxSolo",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": ["messaging", "p2p", "maxima", "privacy", "official"]
+  },
+  {
+    "name": "Filez",
+    "description": "Decentralized file management and storage using the Minima network.",
+    "category": "Tools",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/Filez",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": ["files", "storage", "decentralized", "official"]
+  },
+  {
+    "name": "Pending",
+    "description": "View and manage your pending Minima transactions in one place.",
+    "category": "Tools",
+    "url": "https://minima.global",
+    "github": "https://github.com/minima-global/Pending",
+    "status": "active",
+    "official": true,
+    "added": "2026-05-26",
+    "tags": ["transactions", "pending", "management", "official"]
+  },
+  {
+    "name": "Watcher",
+    "description": "Monitor your Minima node status, uptime, and performance metrics in real time.",
+    "category": "Infrastructure",
+    "url": "https://minima.global",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": ["monitoring", "node", "uptime", "status"]
+  }
+]
