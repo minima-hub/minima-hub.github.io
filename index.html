@@ -351,6 +351,37 @@
       color: #888;
     }
 
+    .badge-legacy {
+      background: rgba(150, 120, 80, 0.12);
+      border: 1px solid rgba(150, 120, 80, 0.28);
+      color: #9a7a50;
+    }
+
+    .legacy-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+
+    .legacy-toggle:hover { border-color: rgba(150,120,80,0.4); color: #9a7a50; }
+
+    .legacy-toggle.active {
+      background: rgba(150,120,80,0.12);
+      border-color: rgba(150,120,80,0.35);
+      color: #9a7a50;
+    }
+
     .dapp-category {
       font-size: 0.72rem;
       color: var(--muted);
@@ -648,6 +679,7 @@
         <button class="cat-tab" data-cat="NFT">NFT</button>
         <button class="cat-tab" data-cat="Gaming">Gaming</button>
       </div>
+      <button id="legacy-toggle" class="legacy-toggle">⊞ Show legacy</button>
       <div class="dapps-count" id="dapps-count"></div>
       <div id="dapps-grid" class="dapps-grid">
         <div class="loading-state"><div class="spinner"></div><span>Loading...</span></div>
@@ -674,6 +706,7 @@
     let allDapps = [];
     let currentCategory = 'all';
     let searchQuery = '';
+    let showLegacy = false;
 
     const icons = {
       download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
@@ -740,7 +773,7 @@
 
     function statusBadge(status) {
       if (status === 'active') return '';
-      const cls = { beta: 'badge-beta', experimental: 'badge-experimental', archived: 'badge-archived' }[status] || '';
+      const cls = { beta: 'badge-beta', experimental: 'badge-experimental', archived: 'badge-archived', legacy: 'badge-legacy' }[status] || '';
       return `<span class="badge ${cls}">${status}</span>`;
     }
 
@@ -778,6 +811,7 @@
     function filterDapps() {
       const q = searchQuery.toLowerCase();
       renderDapps(allDapps.filter(d => {
+        if (!showLegacy && d.status === 'legacy') return false;
         const catMatch = currentCategory === 'all' || d.category === currentCategory;
         const searchMatch = !q || d.name.toLowerCase().includes(q) || d.description.toLowerCase().includes(q) || (d.tags && d.tags.some(t => t.toLowerCase().includes(q)));
         return catMatch && searchMatch;
@@ -821,6 +855,14 @@
 
     document.getElementById('search-input').addEventListener('input', e => {
       searchQuery = e.target.value.trim();
+      filterDapps();
+    });
+
+    document.getElementById('legacy-toggle').addEventListener('click', () => {
+      showLegacy = !showLegacy;
+      const btn = document.getElementById('legacy-toggle');
+      btn.classList.toggle('active', showLegacy);
+      btn.textContent = showLegacy ? '✕ Hide legacy' : '⊞ Show legacy';
       filterDapps();
     });
 
