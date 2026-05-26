@@ -90,7 +90,8 @@
       "time-lock",
       "savings",
       "scheduled"
-    ]
+    ],
+    "x": "https://x.com/0xNemr"
   },
   {
     "name": "Health",
@@ -236,7 +237,7 @@
     "description": "Community-built decentralized exchange accessible directly from the browser.",
     "category": "Finance",
     "url": "https://minimask.org/dex/public/",
-    "github": null,
+    "github": "https://github.com/minima-global/minimask",
     "status": "active",
     "official": false,
     "added": "2026-05-26",
@@ -251,7 +252,7 @@
     "description": "Community web wallet for Minima - access your MINIMA from the browser without installing the node app.",
     "category": "Finance",
     "url": "https://minimask.org/webwallet/index.html",
-    "github": null,
+    "github": "https://github.com/minima-global/minimask",
     "status": "active",
     "official": false,
     "added": "2026-05-26",
@@ -266,7 +267,7 @@
     "description": "Minima ecosystem project - exchange and token tools.",
     "category": "Finance",
     "url": "https://minimaxt.org",
-    "github": null,
+    "github": "https://github.com/minima-global/MinimaDEX",
     "status": "active",
     "official": false,
     "added": "2026-05-26",
@@ -287,7 +288,8 @@
     "tags": [
       "merch",
       "collectibles"
-    ]
+    ],
+    "x": "https://x.com/eurobuddha"
   },
   {
     "name": "MiniSwap",
@@ -317,7 +319,8 @@
       "game",
       "interactive",
       "metaverse"
-    ]
+    ],
+    "x": "https://x.com/0xNemr"
   },
   {
     "name": "MiniWEB",
@@ -392,7 +395,8 @@
       "web",
       "hosting",
       "browser"
-    ]
+    ],
+    "x": "https://x.com/eurobuddha"
   },
   {
     "name": "Script IDE",
@@ -425,7 +429,8 @@
       "backup",
       "seed-phrase",
       "vault"
-    ]
+    ],
+    "x": "https://x.com/0xNemr"
   },
   {
     "name": "Shout Out",
@@ -455,7 +460,8 @@
       "wallet",
       "simple",
       "kiss-labs"
-    ]
+    ],
+    "x": "https://x.com/0xNemr"
   },
   {
     "name": "Soko",
@@ -471,7 +477,8 @@
       "marketplace",
       "buy",
       "sell"
-    ]
+    ],
+    "x": "https://x.com/0xNemr"
   },
   {
     "name": "SQL Bench",
@@ -504,7 +511,10 @@
       "self-custody",
       "wallet",
       "stablecoin"
-    ]
+    ],
+    "x": "https://x.com/StablesCouncil",
+    "telegram": "https://t.me/stablescommunity",
+    "discord": "https://discord.gg/rTdqwRGPXR"
   },
   {
     "name": "Terminal",
@@ -569,7 +579,8 @@
       "nft",
       "launch",
       "create"
-    ]
+    ],
+    "x": "https://x.com/0xNemr"
   },
   {
     "name": "V",

@@ -412,6 +412,7 @@
 
     .dapp-link.primary:hover { background: rgba(26, 232, 123, 0.18); }
     .dapp-link svg { width: 12px; height: 12px; }
+    .dapp-social { padding: 5px 8px; }
 
     .empty-state {
       grid-column: 1 / -1;
@@ -773,6 +774,9 @@
           <div class="dapp-links">
             ${d.url ? `<a href="${d.url}" target="_blank" rel="noopener" class="dapp-link primary">${icons.link} Open</a>` : ''}
             ${d.github ? `<a href="${d.github}" target="_blank" rel="noopener" class="dapp-link">${icons.github} GitHub</a>` : ''}
+            ${d.x ? `<a href="${d.x}" target="_blank" rel="noopener" class="dapp-link dapp-social" title="X / Twitter">${icons.x}</a>` : ''}
+            ${d.telegram ? `<a href="${d.telegram}" target="_blank" rel="noopener" class="dapp-link dapp-social" title="Telegram">${icons.telegram}</a>` : ''}
+            ${d.discord ? `<a href="${d.discord}" target="_blank" rel="noopener" class="dapp-link dapp-social" title="Discord">${icons.discord}</a>` : ''}
           </div>
         </div>`).join('');
     }
