@@ -438,5 +438,38 @@
     "official": false,
     "added": "2026-05-26",
     "tags": ["logs", "debug", "monitoring", "node"]
+  },
+  {
+    "name": "V",
+    "description": "Decentralized on-chain social platform and self-sovereign AI agent experiment built on Minima. Share posts, articles and polls with true censorship resistance.",
+    "category": "Communication",
+    "url": "https://vita-agent.ai",
+    "github": null,
+    "status": "active",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": ["social", "ai", "decentralized", "posts", "vita"]
+  },
+  {
+    "name": "Stables",
+    "description": "Self-custody banking app built on Minima - permissionless payments, fast settlement, and investment tools for merchants and individuals.",
+    "category": "Finance",
+    "url": "https://stablescouncil.org",
+    "github": null,
+    "status": "beta",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": ["banking", "payments", "self-custody", "wallet", "stablecoin"]
+  },
+  {
+    "name": "The Pool",
+    "description": "Open-source decentralized AMM liquidity pool for MINIMA/USDT on the Minima blockchain. No custody, no admin wallet - 1% fee stays in pool reserves for liquidity providers.",
+    "category": "Finance",
+    "url": "https://github.com/Charles0xhorizonxyz/the-minima-pool",
+    "github": "https://github.com/Charles0xhorizonxyz/the-minima-pool",
+    "status": "experimental",
+    "official": false,
+    "added": "2026-05-26",
+    "tags": ["amm", "liquidity", "pool", "defi", "minima-usdt"]
   }
 ]

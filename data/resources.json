@@ -33,9 +33,10 @@
       "label": "Community",
       "items": [
         { "name": "Telegram", "url": "https://t.me/Minima_Global", "note": "" },
-        { "name": "Discord", "url": "https://discord.gg/minima", "note": "" },
-        { "name": "X / Twitter", "url": "https://x.com/MinimaHQ", "note": "" },
-        { "name": "Reddit", "url": "https://www.reddit.com/r/Minima", "note": "" }
+        { "name": "Discord", "url": "https://discord.gg/minimaglobal", "note": "" },
+        { "name": "X / Twitter", "url": "https://x.com/Minima_Global", "note": "" },
+        { "name": "YouTube", "url": "https://www.youtube.com/@MinimaGlobal", "note": "" },
+        { "name": "LinkedIn", "url": "https://www.linkedin.com/company/minimaglobal/", "note": "" }
       ]
     },
     {
@@ -62,7 +63,8 @@
         { "name": "KISS Labs Store", "url": "https://eliasnemr.github.io/kisslabsstore/kiss_labs.json", "note": "Elias Nemr" },
         { "name": "Panda dApps", "url": "https://eurobuddha.com/pandadapps.json", "note": "Eurobuddha" },
         { "name": "DynamiteSush Store", "url": "https://dynamitesush.vps.webdock.cloud/store/store.json", "note": "DynamiteSush" },
-        { "name": "Monthrie MegaStore", "url": "https://monthrie.github.io/minidapp-store/store.json", "note": "Monthrie" }
+        { "name": "Monthrie MegaStore", "url": "https://monthrie.github.io/minidapp-store/store.json", "note": "Monthrie" },
+        { "name": "VITAs Store", "url": "https://vita-agent.ai/dapp-store/dapps.json", "note": "VITA" }
       ]
     }
   ],
