@@ -596,6 +596,17 @@
     "x": "https://x.com/0xNemr"
   },
   {
+    "name": "Trackium",
+    "description": "Physical asset tracker using GPS and IoT hardware on Minima - decentralized data, tamper detection, and MiniDapp monitoring.",
+    "category": "Infrastructure",
+    "url": "https://trackium.tech/",
+    "github": null,
+    "status": "beta",
+    "official": false,
+    "added": "2026-05-27",
+    "tags": ["iot", "tracking", "gps", "asset", "hardware"]
+  },
+  {
     "name": "utxoWallet",
     "description": "Explicit UTXO-selection wallet - pick exactly which coins you spend. Send, split, distribute, consolidate and QR receive with full coin and token detail.",
     "category": "Finance",
