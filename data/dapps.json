@@ -681,7 +681,7 @@
     "description": "Self-custody banking app built on Minima - permissionless payments, fast settlement, and investment tools for merchants and individuals.",
     "category": "Finance",
     "url": "https://stablescouncil.org",
-    "github": null,
+    "github": "https://github.com/StablesCouncil",
     "status": "beta",
     "official": false,
     "added": "2026-05-26",
