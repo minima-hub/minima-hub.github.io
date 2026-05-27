@@ -33,10 +33,20 @@
       ]
     },
     {
-      "label": "Developer",
+      "label": "Community Voices",
+      "note": "Independent community members, creators, and spaces.",
       "items": [
-        { "name": "MDS - Minima Development System", "url": "https://docs.minima.global/docs/development", "note": "JavaScript · Official" },
-        { "name": "minima.js", "url": "https://github.com/minima-global/Minima", "note": "JavaScript · Archived" }
+        { "name": "@Core20220208", "url": "https://x.com/Core20220208", "note": "" },
+        { "name": "@CRYPTO_MINIMA", "url": "https://x.com/CRYPTO_MINIMA", "note": "" },
+        { "name": "@FuuSiSi", "url": "https://x.com/FuuSiSi", "note": "" },
+        { "name": "@minibtccoin", "url": "https://x.com/minibtccoin", "note": "" },
+        { "name": "@minimaLayer1", "url": "https://x.com/minimaLayer1", "note": "" },
+        { "name": "@MinimaMachines", "url": "https://x.com/MinimaMachines", "note": "" },
+        { "name": "Minimorph Community", "url": "https://t.me/minimorph", "note": "P2E game · Telegram" },
+        { "name": "@Satoureireal", "url": "https://x.com/Satoureireal", "note": "" },
+        { "name": "@sunnymelody2020", "url": "https://x.com/sunnymelody2020", "note": "" },
+        { "name": "@Xtrim03", "url": "https://x.com/Xtrim03", "note": "" },
+        { "name": "@_Yinkuz", "url": "https://x.com/_Yinkuz", "note": "" }
       ]
     },
     {
@@ -50,7 +60,18 @@
       ]
     },
     {
-      "label": "Community",
+      "label": "Minima Token",
+      "items": [
+        { "name": "MEXC", "url": "https://www.mexc.com/en-GB/exchange/MINIMA_USDT", "note": "CEX" },
+        { "name": "BitMart", "url": "https://www.bitmart.com/trade/BTC_USDT", "note": "CEX" },
+        { "name": "XT.com", "url": "https://www.xt.com/en/trade/minima_usdt", "note": "CEX" },
+        { "name": "MinimaXT", "url": "https://minimaxt.org/", "note": "DEX" },
+        { "name": "CoinMarketCap", "url": "https://coinmarketcap.com/currencies/minima-global/", "note": "Aggregator" },
+        { "name": "CoinGecko", "url": "https://www.coingecko.com/en/coins/minima", "note": "Aggregator" }
+      ]
+    },
+    {
+      "label": "Minima Socials",
       "items": [
         { "name": "Discord", "url": "https://discord.gg/minimaglobal", "note": "" },
         { "name": "GitHub", "url": "https://github.com/minima-global", "note": "" },
@@ -61,14 +82,19 @@
       ]
     },
     {
-      "label": "Community Chats",
-      "note": "Independent community spaces - not affiliated with Minima Global.",
+      "label": "Minima on LinkedIn",
+      "note": "Official Minima Global team members.",
       "items": [
-        { "name": "Minimorph Community", "url": "https://t.me/minimorph", "note": "P2E game · 601 subscribers" }
+        { "name": "Eurobuddha", "url": "https://www.linkedin.com/in/eurobuddha/", "note": "" },
+        { "name": "Hugo Feiler", "url": "https://www.linkedin.com/in/hugo-feiler/", "note": "" },
+        { "name": "Jazmin Ribeiro", "url": "https://www.linkedin.com/in/jazminribeiro/", "note": "" },
+        { "name": "Luke Edwards", "url": "https://www.linkedin.com/in/lukeedwardsuk/", "note": "" },
+        { "name": "Neo Hibbard", "url": "https://www.linkedin.com/in/neo-hibbard/", "note": "" },
+        { "name": "Richard Brown", "url": "https://www.linkedin.com/in/richard-brown-791bbb6/", "note": "" }
       ]
     },
     {
-      "label": "Minima Team",
+      "label": "Minima on X",
       "note": "Official Minima team members active on X.",
       "items": [
         { "name": "@eurobuddha", "url": "https://x.com/eurobuddha", "note": "" },
@@ -78,19 +104,9 @@
       ]
     },
     {
-      "label": "Community Voices",
-      "note": "Independent community members and creators active on X.",
+      "label": "Developer",
       "items": [
-        { "name": "@Core20220208", "url": "https://x.com/Core20220208", "note": "" },
-        { "name": "@CRYPTO_MINIMA", "url": "https://x.com/CRYPTO_MINIMA", "note": "" },
-        { "name": "@FuuSiSi", "url": "https://x.com/FuuSiSi", "note": "" },
-        { "name": "@minibtccoin", "url": "https://x.com/minibtccoin", "note": "" },
-        { "name": "@minimaLayer1", "url": "https://x.com/minimaLayer1", "note": "" },
-        { "name": "@MinimaMachines", "url": "https://x.com/MinimaMachines", "note": "" },
-        { "name": "@Satoureireal", "url": "https://x.com/Satoureireal", "note": "" },
-        { "name": "@sunnymelody2020", "url": "https://x.com/sunnymelody2020", "note": "" },
-        { "name": "@Xtrim03", "url": "https://x.com/Xtrim03", "note": "" },
-        { "name": "@_Yinkuz", "url": "https://x.com/_Yinkuz", "note": "" }
+        { "name": "MDS - Minima Development System", "url": "https://docs.minima.global/docs/development", "note": "JavaScript · Official" }
       ]
     }
   ]
