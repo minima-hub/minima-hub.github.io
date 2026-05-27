@@ -749,7 +749,7 @@
   <script>
     let allDapps = [];
     let currentCategory = 'all';
-    let currentTag = '';
+    let activeTags = new Set();
     let searchQuery = '';
     let showLegacy = false;
 
@@ -824,7 +824,7 @@
           </div>
           <div class="dapp-category">${d.category}</div>
           <div class="dapp-desc">${d.description}</div>
-          ${d.tags && d.tags.length ? `<div class="dapp-tags">${d.tags.map(t => `<span class="tag${t === currentTag ? ' active-tag' : ''}" data-tag="${t}">${t}</span>`).join('')}</div>` : ''}
+          ${d.tags && d.tags.length ? `<div class="dapp-tags">${d.tags.map(t => `<span class="tag${activeTags.has(t) ? ' active-tag' : ''}" data-tag="${t}">${t}</span>`).join('')}</div>` : ''}
           <div class="dapp-links">
             ${d.url ? `<a href="${d.url}" target="_blank" rel="noopener" class="dapp-link primary">${icons.link} Open</a>` : ''}
             ${d.github ? `<a href="${d.github}" target="_blank" rel="noopener" class="dapp-link">${icons.github} GitHub</a>` : ''}
@@ -840,7 +840,7 @@
       renderDapps(allDapps.filter(d => {
         if (!showLegacy && d.status === 'legacy') return false;
         const catMatch = currentCategory === 'all' || d.category === currentCategory;
-        const tagMatch = !currentTag || (d.tags && d.tags.includes(currentTag));
+        const tagMatch = activeTags.size === 0 || (d.tags && d.tags.some(t => activeTags.has(t)));
         const searchMatch = !q || d.name.toLowerCase().includes(q) || d.description.toLowerCase().includes(q) || (d.tags && d.tags.some(t => t.toLowerCase().includes(q)));
         return catMatch && tagMatch && searchMatch;
       }));
@@ -906,14 +906,15 @@
 
     function updateTagRow() {
       document.querySelectorAll('#tag-row .tag-filter-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.tag === currentTag);
+        btn.classList.toggle('active', activeTags.has(btn.dataset.tag));
       });
     }
 
     document.getElementById('tag-row').addEventListener('click', e => {
       const btn = e.target.closest('.tag-filter-btn');
       if (!btn) return;
-      currentTag = currentTag === btn.dataset.tag ? '' : btn.dataset.tag;
+      const tag = btn.dataset.tag;
+      activeTags.has(tag) ? activeTags.delete(tag) : activeTags.add(tag);
       updateTagRow();
       filterDapps();
     });
@@ -921,7 +922,8 @@
     document.getElementById('dapps-grid').addEventListener('click', e => {
       const el = e.target.closest('.tag');
       if (!el || !el.dataset.tag) return;
-      currentTag = currentTag === el.dataset.tag ? '' : el.dataset.tag;
+      const tag = el.dataset.tag;
+      activeTags.has(tag) ? activeTags.delete(tag) : activeTags.add(tag);
       updateTagRow();
       filterDapps();
     });
