@@ -883,6 +883,7 @@
       showLegacy = !showLegacy;
       document.getElementById('legacy-toggle').classList.toggle('active', showLegacy);
       document.getElementById('legacy-toggle-label').textContent = showLegacy ? 'Hide legacy' : 'Show legacy';
+      buildTagRow();
       filterDapps();
     }
     document.getElementById('legacy-toggle').addEventListener('click', toggleLegacy);
@@ -890,12 +891,15 @@
 
     function buildTagRow() {
       const counts = {};
-      allDapps.forEach(d => {
-        if (d.tags) d.tags.forEach(t => { counts[t] = (counts[t] || 0) + 1; });
-      });
+      allDapps
+        .filter(d => showLegacy || d.status !== 'legacy')
+        .forEach(d => {
+          if (d.tags) d.tags.forEach(t => { counts[t] = (counts[t] || 0) + 1; });
+        });
+      activeTags.forEach(t => { if (!counts[t]) activeTags.delete(t); });
       const sorted = Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
       document.getElementById('tag-row').innerHTML = sorted.map(([tag]) =>
-        `<button class="tag-filter-btn" data-tag="${tag}">${tag}</button>`
+        `<button class="tag-filter-btn${activeTags.has(tag) ? ' active' : ''}" data-tag="${tag}">${tag}</button>`
       ).join('');
     }
 
