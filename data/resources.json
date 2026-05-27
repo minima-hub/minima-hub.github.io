@@ -76,6 +76,26 @@
       "items": [
         { "name": "CertiK Audit", "url": "https://skynet.certik.com/projects/minima", "note": "Independent security audit" }
       ]
+    },
+    {
+      "label": "Community Chats",
+      "note": "Independent community spaces - not affiliated with Minima Global.",
+      "items": [
+        { "name": "Minima Hangout Lounge", "url": "https://t.me/minimahangoutlounge", "note": "264 members" },
+        { "name": "Minimorph Community", "url": "https://t.me/minimorph", "note": "P2E game · 601 subscribers" }
+      ]
+    },
+    {
+      "label": "Community Voices",
+      "note": "Independent community members and creators active on X.",
+      "items": [
+        { "name": "@minibtccoin", "url": "https://x.com/minibtccoin", "note": "" },
+        { "name": "@Core20220208", "url": "https://x.com/Core20220208", "note": "" },
+        { "name": "@CRYPTO_MINIMA", "url": "https://x.com/CRYPTO_MINIMA", "note": "" },
+        { "name": "@FuuSiSi", "url": "https://x.com/FuuSiSi", "note": "" },
+        { "name": "@Ne0xf", "url": "https://x.com/Ne0xf", "note": "" },
+        { "name": "@Satoureireal", "url": "https://x.com/Satoureireal", "note": "" }
+      ]
     }
   ]
 }
