@@ -8,7 +8,11 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["game", "arcade", "retro"]
+    "tags": [
+      "arcade",
+      "game",
+      "retro"
+    ]
   },
   {
     "name": "AnyPhraseRecovery",
@@ -19,7 +23,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["recovery", "seed-phrase", "wallet", "sweep"]
+    "tags": [
+      "recovery",
+      "seed-phrase",
+      "sweep",
+      "wallet"
+    ]
   },
   {
     "name": "Asteroids",
@@ -30,7 +39,11 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["game", "arcade", "retro"]
+    "tags": [
+      "arcade",
+      "game",
+      "retro"
+    ]
   },
   {
     "name": "Axe S3",
@@ -41,7 +54,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["ownership", "proof", "tokens", "verification"]
+    "tags": [
+      "ownership",
+      "proof",
+      "tokens",
+      "verification"
+    ]
   },
   {
     "name": "BIP39 Seed Generator",
@@ -52,7 +70,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["bip39", "seed", "mnemonic", "security"]
+    "tags": [
+      "bip39",
+      "mnemonic",
+      "security",
+      "seed"
+    ]
   },
   {
     "name": "Brain Wallet",
@@ -63,7 +86,12 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["btc", "ltc", "wallet", "passphrase"]
+    "tags": [
+      "btc",
+      "ltc",
+      "passphrase",
+      "wallet"
+    ]
   },
   {
     "name": "Breaklock",
@@ -74,7 +102,11 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["game", "puzzle", "pattern"]
+    "tags": [
+      "game",
+      "pattern",
+      "puzzle"
+    ]
   },
   {
     "name": "Calculator",
@@ -85,7 +117,11 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["calculator", "utility", "math"]
+    "tags": [
+      "calculator",
+      "math",
+      "utility"
+    ]
   },
   {
     "name": "ChainMail",
@@ -96,7 +132,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["email", "encrypted", "messaging", "on-chain"]
+    "tags": [
+      "email",
+      "encrypted",
+      "messaging",
+      "on-chain"
+    ]
   },
   {
     "name": "Chatter",
@@ -107,7 +148,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["chat", "messaging", "decentralized"]
+    "tags": [
+      "chat",
+      "decentralized",
+      "messaging"
+    ]
   },
   {
     "name": "Faucet",
@@ -118,7 +163,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["faucet", "tokens", "onboarding"]
+    "tags": [
+      "faucet",
+      "onboarding",
+      "tokens"
+    ]
   },
   {
     "name": "Filez",
@@ -129,7 +178,11 @@
     "status": "active",
     "official": true,
     "added": "2026-05-26",
-    "tags": ["files", "storage", "official"]
+    "tags": [
+      "files",
+      "official",
+      "storage"
+    ]
   },
   {
     "name": "Future Cash",
@@ -140,7 +193,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["time-lock", "savings", "scheduled"],
+    "tags": [
+      "savings",
+      "scheduled",
+      "time-lock"
+    ],
     "x": "https://x.com/0xNemr"
   },
   {
@@ -152,7 +209,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["health", "data", "records"]
+    "tags": [
+      "data",
+      "health",
+      "records"
+    ]
   },
   {
     "name": "History",
@@ -163,7 +224,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["history", "transactions", "blocks"]
+    "tags": [
+      "blocks",
+      "history",
+      "transactions"
+    ]
   },
   {
     "name": "Integritas",
@@ -174,7 +239,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["infrastructure", "services", "technology"]
+    "tags": [
+      "infrastructure",
+      "services",
+      "technology"
+    ]
   },
   {
     "name": "Limit",
@@ -185,7 +254,13 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["dex", "limit-orders", "usdt", "on-chain"]
+    "tags": [
+      "dex",
+      "limit-orders",
+      "on-chain",
+      "stablecoin",
+      "usdt"
+    ]
   },
   {
     "name": "Linternet Plaza",
@@ -196,7 +271,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["directory", "linternet", "pocketweb", "decentralized"]
+    "tags": [
+      "decentralized",
+      "directory",
+      "linternet",
+      "pocketweb"
+    ]
   },
   {
     "name": "Logs",
@@ -207,7 +287,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["logs", "debug", "monitoring", "node"]
+    "tags": [
+      "debug",
+      "logs",
+      "monitoring",
+      "node"
+    ]
   },
   {
     "name": "Lotto",
@@ -218,7 +303,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["lottery", "game", "random"]
+    "tags": [
+      "game",
+      "lottery",
+      "random"
+    ]
   },
   {
     "name": "Lunar Lander",
@@ -229,7 +318,11 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["game", "arcade", "retro"]
+    "tags": [
+      "arcade",
+      "game",
+      "retro"
+    ]
   },
   {
     "name": "MaxContacts",
@@ -240,7 +333,12 @@
     "status": "active",
     "official": true,
     "added": "2026-05-26",
-    "tags": ["maxima", "contacts", "p2p", "official"]
+    "tags": [
+      "contacts",
+      "maxima",
+      "official",
+      "p2p"
+    ]
   },
   {
     "name": "Maximize",
@@ -251,7 +349,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["yield", "staking", "rewards", "node"]
+    "tags": [
+      "node",
+      "rewards",
+      "staking",
+      "yield"
+    ]
   },
   {
     "name": "MaxSolo",
@@ -262,7 +365,13 @@
     "status": "active",
     "official": true,
     "added": "2026-05-26",
-    "tags": ["messaging", "p2p", "maxima", "private", "official"]
+    "tags": [
+      "maxima",
+      "messaging",
+      "official",
+      "p2p",
+      "private"
+    ]
   },
   {
     "name": "minArmyKnife",
@@ -273,7 +382,13 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["node", "tools", "hygiene", "coins", "management"]
+    "tags": [
+      "coins",
+      "hygiene",
+      "management",
+      "node",
+      "tools"
+    ]
   },
   {
     "name": "MiniFS",
@@ -284,7 +399,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["filesystem", "storage", "developer"]
+    "tags": [
+      "developer",
+      "filesystem",
+      "storage"
+    ]
   },
   {
     "name": "MinimaMMR",
@@ -295,7 +414,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["mmr", "node", "infrastructure"]
+    "tags": [
+      "infrastructure",
+      "mmr",
+      "node"
+    ]
   },
   {
     "name": "MinimASK",
@@ -306,7 +429,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["dex", "swap", "browser"]
+    "tags": [
+      "browser",
+      "dex",
+      "swap"
+    ]
   },
   {
     "name": "MinimASK Wallet",
@@ -317,7 +444,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["wallet", "web", "browser"]
+    "tags": [
+      "browser",
+      "wallet",
+      "web"
+    ]
   },
   {
     "name": "MinimaXT",
@@ -328,7 +459,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["exchange", "tokens", "usdt"]
+    "tags": [
+      "exchange",
+      "stablecoin",
+      "tokens",
+      "usdt"
+    ]
   },
   {
     "name": "MiniMerch",
@@ -339,7 +475,10 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["merch", "collectibles"],
+    "tags": [
+      "collectibles",
+      "merch"
+    ],
     "x": "https://x.com/eurobuddha"
   },
   {
@@ -351,7 +490,11 @@
     "status": "active",
     "official": true,
     "added": "2026-05-26",
-    "tags": ["swap", "dex", "tokens"]
+    "tags": [
+      "dex",
+      "swap",
+      "tokens"
+    ]
   },
   {
     "name": "Miniverse",
@@ -362,7 +505,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["game", "interactive", "metaverse"],
+    "tags": [
+      "game",
+      "interactive",
+      "metaverse"
+    ],
     "x": "https://x.com/0xNemr"
   },
   {
@@ -374,7 +521,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["web", "browser", "decentralized"]
+    "tags": [
+      "browser",
+      "decentralized",
+      "web"
+    ]
   },
   {
     "name": "MXUSD",
@@ -385,7 +536,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["stablecoin", "usdt", "bridge"]
+    "tags": [
+      "bridge",
+      "stablecoin",
+      "usdt"
+    ]
   },
   {
     "name": "News Feed",
@@ -396,7 +551,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["news", "feed", "information"]
+    "tags": [
+      "feed",
+      "information",
+      "news"
+    ]
   },
   {
     "name": "Pending",
@@ -407,7 +566,11 @@
     "status": "active",
     "official": true,
     "added": "2026-05-26",
-    "tags": ["transactions", "pending", "official"]
+    "tags": [
+      "official",
+      "pending",
+      "transactions"
+    ]
   },
   {
     "name": "PocketFS",
@@ -418,7 +581,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["filesystem", "files", "decentralized", "storage"]
+    "tags": [
+      "decentralized",
+      "files",
+      "filesystem",
+      "storage"
+    ]
   },
   {
     "name": "PocketWeb",
@@ -429,7 +597,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["web", "hosting", "browser"],
+    "tags": [
+      "browser",
+      "hosting",
+      "web"
+    ],
     "x": "https://x.com/eurobuddha"
   },
   {
@@ -441,7 +613,11 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["game", "puzzle", "2048"]
+    "tags": [
+      "2048",
+      "game",
+      "puzzle"
+    ]
   },
   {
     "name": "Script IDE",
@@ -452,7 +628,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["scripting", "ide", "developer", "tools"]
+    "tags": [
+      "developer",
+      "ide",
+      "scripting",
+      "tools"
+    ]
   },
   {
     "name": "Security",
@@ -463,7 +644,13 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["security", "quicksync", "backup", "seed-phrase", "vault"],
+    "tags": [
+      "backup",
+      "quicksync",
+      "security",
+      "seed-phrase",
+      "vault"
+    ],
     "x": "https://x.com/0xNemr"
   },
   {
@@ -475,7 +662,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["seed", "mnemonic", "security", "wallet"]
+    "tags": [
+      "mnemonic",
+      "security",
+      "seed",
+      "wallet"
+    ]
   },
   {
     "name": "Shout Out",
@@ -486,7 +678,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["broadcast", "public", "social"]
+    "tags": [
+      "broadcast",
+      "public",
+      "social"
+    ]
   },
   {
     "name": "SIMPLE",
@@ -497,7 +693,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["wallet", "simple", "kiss-labs"],
+    "tags": [
+      "kiss-labs",
+      "simple",
+      "wallet"
+    ],
     "x": "https://x.com/0xNemr"
   },
   {
@@ -509,7 +709,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["nft", "marketplace", "buy", "sell"],
+    "tags": [
+      "buy",
+      "marketplace",
+      "nft",
+      "sell"
+    ],
     "x": "https://x.com/0xNemr"
   },
   {
@@ -521,7 +726,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["sql", "database", "developer", "query"]
+    "tags": [
+      "database",
+      "developer",
+      "query",
+      "sql"
+    ]
   },
   {
     "name": "Stables",
@@ -532,7 +742,13 @@
     "status": "beta",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["banking", "payments", "self-custody", "wallet", "stablecoin"],
+    "tags": [
+      "banking",
+      "payments",
+      "self-custody",
+      "stablecoin",
+      "wallet"
+    ],
     "x": "https://x.com/StablesCouncil",
     "telegram": "https://t.me/stablescommunity",
     "discord": "https://discord.gg/rTdqwRGPXR"
@@ -546,7 +762,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["maxima", "mls", "address", "p2p"]
+    "tags": [
+      "address",
+      "maxima",
+      "mls",
+      "p2p"
+    ]
   },
   {
     "name": "Terminal",
@@ -557,7 +778,13 @@
     "status": "active",
     "official": true,
     "added": "2026-05-26",
-    "tags": ["cli", "terminal", "developer", "node", "official"]
+    "tags": [
+      "cli",
+      "developer",
+      "node",
+      "official",
+      "terminal"
+    ]
   },
   {
     "name": "The Pool",
@@ -568,7 +795,14 @@
     "status": "beta",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["amm", "liquidity", "pool", "defi", "usdt"],
+    "tags": [
+      "amm",
+      "defi",
+      "liquidity",
+      "pool",
+      "stablecoin",
+      "usdt"
+    ],
     "telegram": "https://t.me/theminimapool",
     "x": "https://x.com/theminimapool"
   },
@@ -581,7 +815,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["storage", "secure", "secrets"]
+    "tags": [
+      "secrets",
+      "secure",
+      "storage"
+    ]
   },
   {
     "name": "Token Studio",
@@ -592,7 +830,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["tokens", "nft", "launch", "create"],
+    "tags": [
+      "create",
+      "launch",
+      "nft",
+      "tokens"
+    ],
     "x": "https://x.com/0xNemr"
   },
   {
@@ -604,7 +847,13 @@
     "status": "beta",
     "official": false,
     "added": "2026-05-27",
-    "tags": ["iot", "tracking", "gps", "asset", "hardware"]
+    "tags": [
+      "asset",
+      "gps",
+      "hardware",
+      "iot",
+      "tracking"
+    ]
   },
   {
     "name": "utxoWallet",
@@ -615,7 +864,12 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["wallet", "utxo", "coins", "advanced"]
+    "tags": [
+      "advanced",
+      "coins",
+      "utxo",
+      "wallet"
+    ]
   },
   {
     "name": "V",
@@ -626,7 +880,13 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["social", "ai", "decentralized", "posts", "vita"]
+    "tags": [
+      "ai",
+      "decentralized",
+      "posts",
+      "social",
+      "vita"
+    ]
   },
   {
     "name": "Vestr",
@@ -637,7 +897,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["portfolio", "vesting", "tokens"]
+    "tags": [
+      "portfolio",
+      "tokens",
+      "vesting"
+    ]
   },
   {
     "name": "VOX",
@@ -648,7 +912,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["social", "censorship-resistant", "protocol"]
+    "tags": [
+      "censorship-resistant",
+      "protocol",
+      "social"
+    ]
   },
   {
     "name": "Wallet",
@@ -659,7 +927,11 @@
     "status": "active",
     "official": true,
     "added": "2026-05-26",
-    "tags": ["wallet", "tokens", "official"]
+    "tags": [
+      "official",
+      "tokens",
+      "wallet"
+    ]
   },
   {
     "name": "Wallet 2.47.2",
@@ -670,7 +942,11 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["wallet", "legacy", "archived"]
+    "tags": [
+      "archived",
+      "legacy",
+      "wallet"
+    ]
   },
   {
     "name": "Watcher",
@@ -681,7 +957,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["monitoring", "node", "uptime"]
+    "tags": [
+      "monitoring",
+      "node",
+      "uptime"
+    ]
   },
   {
     "name": "Yepp!",
@@ -692,7 +972,10 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["social", "community"]
+    "tags": [
+      "community",
+      "social"
+    ]
   },
   {
     "name": "Zero Edge Casino",
@@ -703,6 +986,11 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["casino", "provably-fair", "on-chain", "gaming"]
+    "tags": [
+      "casino",
+      "gaming",
+      "on-chain",
+      "provably-fair"
+    ]
   }
 ]
