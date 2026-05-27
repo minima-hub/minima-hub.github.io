@@ -135,8 +135,7 @@
     "tags": [
       "email",
       "encrypted",
-      "messaging",
-      "on-chain"
+      "messaging"
     ]
   },
   {
@@ -257,7 +256,6 @@
     "tags": [
       "dex",
       "limit-orders",
-      "on-chain",
       "stablecoin",
       "usdt"
     ]
@@ -989,7 +987,6 @@
     "tags": [
       "casino",
       "gaming",
-      "on-chain",
       "provably-fair"
     ]
   }
