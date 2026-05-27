@@ -6,7 +6,8 @@
         { "name": "minima.global", "url": "https://minima.global", "note": "Official website" },
         { "name": "docs.minima.global", "url": "https://docs.minima.global", "note": "Developer documentation" },
         { "name": "github.com/minima-global", "url": "https://github.com/minima-global", "note": "Open source repositories" },
-        { "name": "explorer.minima.global", "url": "https://explorer.minima.global", "note": "Block explorer" }
+        { "name": "explorer.minima.global", "url": "https://explorer.minima.global", "note": "Block explorer" },
+        { "name": "CertiK Audit", "url": "https://skynet.certik.com/projects/minima", "note": "Independent security audit" }
       ]
     },
     {
@@ -20,14 +21,28 @@
       ]
     },
     {
-      "label": "Community",
+      "label": "Node Addresses",
+      "copyable": true,
       "items": [
-        { "name": "Telegram", "url": "https://t.me/Minima_Global", "note": "" },
-        { "name": "Discord", "url": "https://discord.gg/minimaglobal", "note": "" },
-        { "name": "X", "url": "https://x.com/Minima_Global", "note": "" },
-        { "name": "YouTube", "url": "https://www.youtube.com/@MinimaGlobal", "note": "" },
-        { "name": "LinkedIn", "url": "https://www.linkedin.com/company/minimaglobal/", "note": "" },
-        { "name": "GitHub", "url": "https://github.com/minima-global", "note": "" }
+        { "name": "megammr.minima.global:9001", "url": null, "note": "MegaMMR" },
+        { "name": "eurobuddha.com:9001", "url": null, "note": "MegaMMR" },
+        { "name": "spartacusrex.com:9001", "url": null, "note": "MegaMMR" },
+        { "name": "eurobuddha.com/archive.raw.dat", "url": null, "note": "Archive" }
+      ]
+    },
+    {
+      "label": "Community Nodes",
+      "items": [
+        { "name": "Spartacus Rex", "url": "https://spartacusrex.com", "note": "Community node operator" },
+        { "name": "Eurobuddha", "url": "https://eurobuddha.com", "note": "Community node operator" },
+        { "name": "MinimaMMR", "url": "https://minimammr.com", "note": "MMR node infrastructure" }
+      ]
+    },
+    {
+      "label": "Developer",
+      "items": [
+        { "name": "MDS - Minima Development System", "url": "https://docs.minima.global/docs/development", "note": "JavaScript · Official" },
+        { "name": "minima.js", "url": "https://github.com/minima-global/Minima", "note": "JavaScript · Archived" }
       ]
     },
     {
@@ -41,46 +56,14 @@
       ]
     },
     {
-      "label": "MegaMMR Nodes",
-      "copyable": true,
+      "label": "Community",
       "items": [
-        { "name": "megammr.minima.global:9001", "url": null, "note": "" },
-        { "name": "eurobuddha.com:9001", "url": null, "note": "" },
-        { "name": "spartacusrex.com:9001", "url": null, "note": "" }
-      ]
-    },
-    {
-      "label": "Community Nodes",
-      "items": [
-        { "name": "Spartacus Rex", "url": "https://spartacusrex.com", "note": "Community node operator" },
-        { "name": "Eurobuddha", "url": "https://eurobuddha.com", "note": "Community node operator" },
-        { "name": "MinimaMMR", "url": "https://minimammr.com", "note": "MMR node infrastructure" }
-      ]
-    },
-    {
-      "label": "Libraries & SDKs",
-      "items": [
-        { "name": "MDS - Minima Development System", "url": "https://docs.minima.global/docs/development", "note": "JavaScript · Official" },
-        { "name": "minima.js", "url": "https://github.com/minima-global/Minima", "note": "JavaScript · Archived" }
-      ]
-    },
-    {
-      "label": "Archive Nodes",
-      "copyable": true,
-      "items": [
-        { "name": "eurobuddha.com/archive.raw.dat", "url": null, "note": "Eurobuddha" }
-      ]
-    },
-    {
-      "label": "Security",
-      "items": [
-        { "name": "CertiK Audit", "url": "https://skynet.certik.com/projects/minima", "note": "Independent security audit" }
-      ]
-    },
-    {
-      "label": "Community Chats",
-      "note": "Independent community spaces - not affiliated with Minima Global.",
-      "items": [
+        { "name": "Telegram", "url": "https://t.me/Minima_Global", "note": "" },
+        { "name": "Discord", "url": "https://discord.gg/minimaglobal", "note": "" },
+        { "name": "X", "url": "https://x.com/Minima_Global", "note": "" },
+        { "name": "YouTube", "url": "https://www.youtube.com/@MinimaGlobal", "note": "" },
+        { "name": "LinkedIn", "url": "https://www.linkedin.com/company/minimaglobal/", "note": "" },
+        { "name": "GitHub", "url": "https://github.com/minima-global", "note": "" },
         { "name": "Minimorph Community", "url": "https://t.me/minimorph", "note": "P2E game · 601 subscribers" }
       ]
     },
