@@ -328,7 +328,7 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["exchange", "tokens"]
+    "tags": ["exchange", "tokens", "usdt"]
   },
   {
     "name": "MiniMerch",
@@ -385,7 +385,7 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["stablecoin", "usd", "bridge"]
+    "tags": ["stablecoin", "usdt", "bridge"]
   },
   {
     "name": "News Feed",
@@ -568,7 +568,7 @@
     "status": "beta",
     "official": false,
     "added": "2026-05-26",
-    "tags": ["amm", "liquidity", "pool", "defi", "minima-usdt"],
+    "tags": ["amm", "liquidity", "pool", "defi", "usdt"],
     "telegram": "https://t.me/theminimapool",
     "x": "https://x.com/theminimapool"
   },
