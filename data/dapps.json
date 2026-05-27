@@ -51,6 +51,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "security",
       "tokens"
     ]
   },
@@ -105,7 +106,9 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": []
+    "tags": [
+      "developer"
+    ]
   },
   {
     "name": "ChainMail",
@@ -172,6 +175,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "defi",
       "wallet"
     ],
     "x": "https://x.com/0xNemr"
@@ -185,7 +189,9 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": []
+    "tags": [
+      "storage"
+    ]
   },
   {
     "name": "History",
@@ -197,6 +203,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "developer",
+      "monitoring",
       "node"
     ]
   },
@@ -210,6 +218,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "monitoring",
       "node"
     ]
   },
@@ -337,6 +346,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "developer",
       "node",
       "wallet"
     ]
@@ -365,6 +375,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "monitoring",
       "node"
     ]
   },
@@ -467,6 +478,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "node",
       "web"
     ]
   },
@@ -521,6 +533,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "node",
       "storage"
     ]
   },
@@ -534,6 +547,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "node",
       "web"
     ],
     "x": "https://x.com/eurobuddha"
@@ -562,7 +576,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "developer"
+      "developer",
+      "node"
     ]
   },
   {
@@ -632,7 +647,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "nft"
+      "nft",
+      "tokens"
     ],
     "x": "https://x.com/0xNemr"
   },
@@ -646,7 +662,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "developer"
+      "developer",
+      "node"
     ]
   },
   {
@@ -679,7 +696,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "maxima"
+      "maxima",
+      "node"
     ]
   },
   {
@@ -725,7 +743,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "security"
+      "security",
+      "storage"
     ]
   },
   {
@@ -767,6 +786,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "developer",
       "wallet"
     ]
   },
