@@ -81,7 +81,6 @@
       "label": "Community Chats",
       "note": "Independent community spaces - not affiliated with Minima Global.",
       "items": [
-        { "name": "Minima Hangout Lounge", "url": "https://t.me/minimahangoutlounge", "note": "264 members" },
         { "name": "Minimorph Community", "url": "https://t.me/minimorph", "note": "P2E game · 601 subscribers" }
       ]
     },
