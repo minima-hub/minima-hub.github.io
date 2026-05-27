@@ -85,6 +85,16 @@
       ]
     },
     {
+      "label": "Minima Team",
+      "note": "Official Minima team members active on X.",
+      "items": [
+        { "name": "@Ne0xf", "url": "https://x.com/Ne0xf", "note": "" },
+        { "name": "@HugoFeiler", "url": "https://x.com/HugoFeiler", "note": "" },
+        { "name": "@Spartacuswrecks", "url": "https://x.com/Spartacuswrecks", "note": "" },
+        { "name": "@eurobuddha", "url": "https://x.com/eurobuddha", "note": "" }
+      ]
+    },
+    {
       "label": "Community Voices",
       "note": "Independent community members and creators active on X.",
       "items": [
@@ -92,7 +102,6 @@
         { "name": "@Core20220208", "url": "https://x.com/Core20220208", "note": "" },
         { "name": "@CRYPTO_MINIMA", "url": "https://x.com/CRYPTO_MINIMA", "note": "" },
         { "name": "@FuuSiSi", "url": "https://x.com/FuuSiSi", "note": "" },
-        { "name": "@Ne0xf", "url": "https://x.com/Ne0xf", "note": "" },
         { "name": "@Satoureireal", "url": "https://x.com/Satoureireal", "note": "" }
       ]
     }
