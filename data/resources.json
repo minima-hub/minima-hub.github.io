@@ -55,10 +55,16 @@
         { "name": "Discord", "url": "https://discord.gg/minimaglobal", "note": "" },
         { "name": "GitHub", "url": "https://github.com/minima-global", "note": "" },
         { "name": "LinkedIn", "url": "https://www.linkedin.com/company/minimaglobal/", "note": "" },
-        { "name": "Minimorph Community", "url": "https://t.me/minimorph", "note": "P2E game · 601 subscribers" },
         { "name": "Telegram", "url": "https://t.me/Minima_Global", "note": "" },
         { "name": "X", "url": "https://x.com/Minima_Global", "note": "" },
         { "name": "YouTube", "url": "https://www.youtube.com/@MinimaGlobal", "note": "" }
+      ]
+    },
+    {
+      "label": "Community Chats",
+      "note": "Independent community spaces - not affiliated with Minima Global.",
+      "items": [
+        { "name": "Minimorph Community", "url": "https://t.me/minimorph", "note": "P2E game · 601 subscribers" }
       ]
     },
     {
