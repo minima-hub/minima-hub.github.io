@@ -10,8 +10,7 @@
     "added": "2026-05-26",
     "tags": [
       "arcade",
-      "game",
-      "retro"
+      "game"
     ]
   },
   {
@@ -24,9 +23,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "recovery",
-      "seed-phrase",
-      "sweep",
+      "security",
       "wallet"
     ]
   },
@@ -41,8 +38,7 @@
     "added": "2026-05-26",
     "tags": [
       "arcade",
-      "game",
-      "retro"
+      "game"
     ]
   },
   {
@@ -55,10 +51,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "ownership",
-      "proof",
-      "tokens",
-      "verification"
+      "tokens"
     ]
   },
   {
@@ -71,10 +64,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "bip39",
-      "mnemonic",
-      "security",
-      "seed"
+      "developer",
+      "security"
     ]
   },
   {
@@ -87,9 +78,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "btc",
-      "ltc",
-      "passphrase",
+      "security",
       "wallet"
     ]
   },
@@ -104,7 +93,6 @@
     "added": "2026-05-26",
     "tags": [
       "game",
-      "pattern",
       "puzzle"
     ]
   },
@@ -117,11 +105,7 @@
     "status": "legacy",
     "official": false,
     "added": "2026-05-26",
-    "tags": [
-      "calculator",
-      "math",
-      "utility"
-    ]
+    "tags": []
   },
   {
     "name": "ChainMail",
@@ -133,9 +117,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "email",
-      "encrypted",
-      "messaging"
+      "messaging",
+      "security"
     ]
   },
   {
@@ -148,9 +131,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "chat",
-      "decentralized",
-      "messaging"
+      "messaging",
+      "social"
     ]
   },
   {
@@ -163,8 +145,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "faucet",
-      "onboarding",
       "tokens"
     ]
   },
@@ -178,7 +158,6 @@
     "official": true,
     "added": "2026-05-26",
     "tags": [
-      "files",
       "official",
       "storage"
     ]
@@ -193,9 +172,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "savings",
-      "scheduled",
-      "time-lock"
+      "wallet"
     ],
     "x": "https://x.com/0xNemr"
   },
@@ -208,11 +185,7 @@
     "status": "active",
     "official": false,
     "added": "2026-05-26",
-    "tags": [
-      "data",
-      "health",
-      "records"
-    ]
+    "tags": []
   },
   {
     "name": "History",
@@ -224,9 +197,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "blocks",
-      "history",
-      "transactions"
+      "node"
     ]
   },
   {
@@ -239,9 +210,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "infrastructure",
-      "services",
-      "technology"
+      "node"
     ]
   },
   {
@@ -254,8 +223,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
+      "defi",
       "dex",
-      "limit-orders",
       "stablecoin",
       "usdt"
     ]
@@ -270,10 +239,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "decentralized",
-      "directory",
-      "linternet",
-      "pocketweb"
+      "web"
     ]
   },
   {
@@ -286,9 +252,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "debug",
-      "logs",
-      "monitoring",
+      "developer",
       "node"
     ]
   },
@@ -302,9 +266,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "game",
-      "lottery",
-      "random"
+      "casino",
+      "game"
     ]
   },
   {
@@ -318,8 +281,7 @@
     "added": "2026-05-26",
     "tags": [
       "arcade",
-      "game",
-      "retro"
+      "game"
     ]
   },
   {
@@ -332,10 +294,8 @@
     "official": true,
     "added": "2026-05-26",
     "tags": [
-      "contacts",
       "maxima",
-      "official",
-      "p2p"
+      "official"
     ]
   },
   {
@@ -348,10 +308,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "node",
-      "rewards",
-      "staking",
-      "yield"
+      "defi",
+      "node"
     ]
   },
   {
@@ -366,9 +324,7 @@
     "tags": [
       "maxima",
       "messaging",
-      "official",
-      "p2p",
-      "private"
+      "official"
     ]
   },
   {
@@ -381,11 +337,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "coins",
-      "hygiene",
-      "management",
       "node",
-      "tools"
+      "wallet"
     ]
   },
   {
@@ -399,7 +352,6 @@
     "added": "2026-05-26",
     "tags": [
       "developer",
-      "filesystem",
       "storage"
     ]
   },
@@ -413,8 +365,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "infrastructure",
-      "mmr",
       "node"
     ]
   },
@@ -428,9 +378,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "browser",
-      "dex",
-      "swap"
+      "dex"
     ]
   },
   {
@@ -443,7 +391,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "browser",
       "wallet",
       "web"
     ]
@@ -458,9 +405,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "exchange",
+      "dex",
       "stablecoin",
-      "tokens",
       "usdt"
     ]
   },
@@ -474,8 +420,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "collectibles",
-      "merch"
+      "nft",
+      "tokens"
     ],
     "x": "https://x.com/eurobuddha"
   },
@@ -490,7 +436,7 @@
     "added": "2026-05-26",
     "tags": [
       "dex",
-      "swap",
+      "official",
       "tokens"
     ]
   },
@@ -504,9 +450,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "game",
-      "interactive",
-      "metaverse"
+      "game"
     ],
     "x": "https://x.com/0xNemr"
   },
@@ -520,8 +464,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "browser",
-      "decentralized",
       "web"
     ]
   },
@@ -535,7 +477,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "bridge",
       "stablecoin",
       "usdt"
     ]
@@ -550,9 +491,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "feed",
-      "information",
-      "news"
+      "social"
     ]
   },
   {
@@ -566,8 +505,7 @@
     "added": "2026-05-26",
     "tags": [
       "official",
-      "pending",
-      "transactions"
+      "wallet"
     ]
   },
   {
@@ -580,9 +518,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "decentralized",
-      "files",
-      "filesystem",
       "storage"
     ]
   },
@@ -596,8 +531,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "browser",
-      "hosting",
       "web"
     ],
     "x": "https://x.com/eurobuddha"
@@ -612,7 +545,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "2048",
       "game",
       "puzzle"
     ]
@@ -627,10 +559,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "developer",
-      "ide",
-      "scripting",
-      "tools"
+      "developer"
     ]
   },
   {
@@ -643,11 +572,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "backup",
-      "quicksync",
-      "security",
-      "seed-phrase",
-      "vault"
+      "node",
+      "security"
     ],
     "x": "https://x.com/0xNemr"
   },
@@ -661,10 +587,8 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "mnemonic",
-      "security",
-      "seed",
-      "wallet"
+      "developer",
+      "security"
     ]
   },
   {
@@ -677,8 +601,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "broadcast",
-      "public",
+      "messaging",
       "social"
     ]
   },
@@ -692,8 +615,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "kiss-labs",
-      "simple",
       "wallet"
     ],
     "x": "https://x.com/0xNemr"
@@ -708,10 +629,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "buy",
-      "marketplace",
-      "nft",
-      "sell"
+      "nft"
     ],
     "x": "https://x.com/0xNemr"
   },
@@ -725,10 +643,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "database",
-      "developer",
-      "query",
-      "sql"
+      "developer"
     ]
   },
   {
@@ -741,9 +656,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "banking",
-      "payments",
-      "self-custody",
       "stablecoin",
       "wallet"
     ],
@@ -761,10 +673,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "address",
-      "maxima",
-      "mls",
-      "p2p"
+      "maxima"
     ]
   },
   {
@@ -777,11 +686,9 @@
     "official": true,
     "added": "2026-05-26",
     "tags": [
-      "cli",
       "developer",
       "node",
-      "official",
-      "terminal"
+      "official"
     ]
   },
   {
@@ -794,10 +701,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "amm",
       "defi",
-      "liquidity",
-      "pool",
       "stablecoin",
       "usdt"
     ],
@@ -814,9 +718,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "secrets",
-      "secure",
-      "storage"
+      "security"
     ]
   },
   {
@@ -829,8 +731,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "create",
-      "launch",
       "nft",
       "tokens"
     ],
@@ -846,11 +746,8 @@
     "official": false,
     "added": "2026-05-27",
     "tags": [
-      "asset",
-      "gps",
-      "hardware",
       "iot",
-      "tracking"
+      "monitoring"
     ]
   },
   {
@@ -863,9 +760,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "advanced",
-      "coins",
-      "utxo",
       "wallet"
     ]
   },
@@ -879,11 +773,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "ai",
-      "decentralized",
-      "posts",
-      "social",
-      "vita"
+      "social"
     ]
   },
   {
@@ -896,9 +786,7 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "portfolio",
-      "tokens",
-      "vesting"
+      "tokens"
     ]
   },
   {
@@ -911,8 +799,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "censorship-resistant",
-      "protocol",
       "social"
     ]
   },
@@ -941,8 +827,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "archived",
-      "legacy",
       "wallet"
     ]
   },
@@ -957,8 +841,7 @@
     "added": "2026-05-26",
     "tags": [
       "monitoring",
-      "node",
-      "uptime"
+      "node"
     ]
   },
   {
@@ -971,7 +854,6 @@
     "official": false,
     "added": "2026-05-26",
     "tags": [
-      "community",
       "social"
     ]
   },
@@ -986,8 +868,7 @@
     "added": "2026-05-26",
     "tags": [
       "casino",
-      "gaming",
-      "provably-fair"
+      "game"
     ]
   }
 ]
