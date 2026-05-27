@@ -893,7 +893,7 @@
       allDapps.forEach(d => {
         if (d.tags) d.tags.forEach(t => { counts[t] = (counts[t] || 0) + 1; });
       });
-      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+      const sorted = Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
       document.getElementById('tag-row').innerHTML = sorted.map(([tag]) =>
         `<button class="tag-filter-btn" data-tag="${tag}">${tag}</button>`
       ).join('');
