@@ -79,14 +79,32 @@
     .nav-icon svg { width: 20px; height: 20px; }
 
     .site-name {
-      font-size: 1.05rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
       color: var(--text);
       display: flex;
       align-items: center;
       gap: 9px;
       white-space: nowrap;
+    }
+
+    .site-name-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .site-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .site-tagline {
+      font-size: 0.68rem;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      line-height: 1.2;
     }
 
     .site-logo {
@@ -664,7 +682,10 @@
     <div class="wrap nav-inner">
       <a href="#" class="site-name">
         <img src="favicon.svg" class="site-logo" alt="" />
-        Minima Hub
+        <div class="site-name-text">
+          <span class="site-title">Minima Hub</span>
+          <span class="site-tagline">A vibrant ecosystem</span>
+        </div>
       </a>
       <div class="nav-center">
         <nav>
