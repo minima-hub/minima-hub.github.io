@@ -730,7 +730,7 @@
     "name": "The Pool",
     "description": "Open-source decentralized AMM liquidity pool for MINIMA/USDT on the Minima blockchain. No custody, no admin wallet - 1% fee stays in pool reserves for liquidity providers.",
     "category": "Finance",
-    "url": "https://github.com/Charles0xhorizonxyz/the-minima-pool",
+    "url": "https://minima-bay.github.io/pool/",
     "github": "https://github.com/Charles0xhorizonxyz/the-minima-pool",
     "status": "beta",
     "official": false,
