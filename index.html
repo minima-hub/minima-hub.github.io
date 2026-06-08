@@ -858,7 +858,7 @@
           <div class="dapp-desc">${d.description}</div>
           ${d.tags && d.tags.length ? `<div class="dapp-tags">${d.tags.map(t => `<span class="tag${activeTags.has(t) ? ' active-tag' : ''}" data-tag="${t}">${t}</span>`).join('')}</div>` : ''}
           <div class="dapp-links">
-            ${d.url ? `<a href="${d.url}" target="_blank" rel="noopener" class="dapp-link primary">${icons.link} Open</a>` : ''}
+            ${d.url && !/github\.com/i.test(d.url) ? `<a href="${d.url}" target="_blank" rel="noopener" class="dapp-link primary">${icons.link} Open</a>` : ''}
             ${d.github ? `<a href="${d.github}" target="_blank" rel="noopener" class="dapp-link">${icons.github} GitHub</a>` : ''}
             ${d.x ? `<a href="${d.x}" target="_blank" rel="noopener" class="dapp-link dapp-social" title="X / Twitter">${icons.x}</a>` : ''}
             ${d.telegram ? `<a href="${d.telegram}" target="_blank" rel="noopener" class="dapp-link dapp-social" title="Telegram">${icons.telegram}</a>` : ''}
