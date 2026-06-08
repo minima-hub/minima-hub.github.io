@@ -107,6 +107,18 @@
       line-height: 1.2;
     }
 
+    .updated-bar {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 10px;
+    }
+
+    .nav-updated {
+      font-size: 0.72rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
     .site-logo {
       width: 24px;
       height: 24px;
@@ -702,6 +714,10 @@
     </div>
   </header>
 
+  <div class="wrap updated-bar">
+    <span class="nav-updated" id="last-updated"></span>
+  </div>
+
   <section id="resources">
     <div class="wrap">
       <div class="section-head">
@@ -862,6 +878,14 @@
       }));
     }
 
+    function renderLastUpdated(dateStr) {
+      const el = document.getElementById('last-updated');
+      if (!el || !dateStr) return;
+      // Force local midnight so the ISO date is not shifted by timezone
+      const d = new Date(dateStr + 'T00:00:00');
+      el.textContent = 'Updated ' + d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    }
+
     async function loadData() {
       try {
         let dapps, resources;
@@ -879,6 +903,7 @@
         allDapps = dapps;
         buildTagRow();
         renderResources(resources);
+        renderLastUpdated(resources.updated);
         filterDapps();
       } catch (err) {
         document.getElementById('dapps-grid').innerHTML = '<div class="empty-state">Could not load data.</div>';

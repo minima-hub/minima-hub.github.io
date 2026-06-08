@@ -1,4 +1,5 @@
 {
+  "updated": "2026-06-08",
   "groups": [
     {
       "label": "Official",
@@ -63,7 +64,7 @@
       "label": "Minima Token",
       "items": [
         { "name": "MEXC", "url": "https://www.mexc.com/en-GB/exchange/MINIMA_USDT", "note": "CEX" },
-        { "name": "BitMart", "url": "https://www.bitmart.com/trade/BTC_USDT", "note": "CEX" },
+        { "name": "BitMart", "url": "https://www.bitmart.com/trade/BTC_USDT", "note": "CEX, deposits/withdrawals suspended" },
         { "name": "XT.com", "url": "https://www.xt.com/en/trade/minima_usdt", "note": "CEX" },
         { "name": "MinimaXT", "url": "https://minimaxt.org/", "note": "DEX" },
         { "name": "CoinMarketCap", "url": "https://coinmarketcap.com/currencies/minima-global/", "note": "Aggregator" },
