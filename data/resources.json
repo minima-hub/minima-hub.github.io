@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-08",
+  "updated": "2026-06-09",
   "groups": [
     {
       "label": "Official",
@@ -107,7 +107,8 @@
     {
       "label": "Developer",
       "items": [
-        { "name": "MDS - Minima Development System", "url": "https://docs.minima.global/docs/development", "note": "JavaScript · Official" }
+        { "name": "MDS - Minima Development System", "url": "https://docs.minima.global/docs/development", "note": "JavaScript · Official" },
+        { "name": "Onchain Watch", "url": "https://stablescouncil.org/onchain-watch.html", "note": "Stables Council" }
       ]
     }
   ]
