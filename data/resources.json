@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-09",
+  "updated": "2026-06-12",
   "groups": [
     {
       "label": "Official",
@@ -18,11 +18,12 @@
         { "name": "Docker Image", "url": "https://hub.docker.com/r/minimaglobal/minima", "note": "minimaglobal/minima" },
         { "name": "Raspberry Pi Guide", "url": "https://docs.minima.global/docs/runanode/get_started", "note": "" },
         { "name": "VPS / Linux Guide", "url": "https://docs.minima.global/docs/runanode/get_started", "note": "" },
-        { "name": "Terminal Commands", "url": "https://docs.minima.global/docs/runanode/get_started", "note": "Full command reference" }
+        { "name": "Terminal Commands", "url": "https://docs.minima.global/docs/runanode/get_started", "note": "Full command reference" },
+        { "name": "Spartacus Rex GitHub", "url": "https://github.com/spartacusrex-minima", "note": "Pure node - community tools and scripts" }
       ]
     },
     {
-      "label": "Nodes",
+      "label": "Node connections",
       "items": [
         { "name": "Eurobuddha", "url": "https://eurobuddha.com", "note": "Community node operator" },
         { "name": "MinimaMMR", "url": "https://minimammr.com", "note": "MMR node infrastructure" },
